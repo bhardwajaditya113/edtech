@@ -2,7 +2,7 @@
 @section('home')
 
 @section('title')
-        Easy Learning
+        Mirror Square Analytics
 @endsection
 
 

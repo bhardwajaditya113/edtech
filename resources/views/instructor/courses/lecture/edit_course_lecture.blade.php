@@ -41,7 +41,7 @@
                     <div class="form-group col-md-6">
                         <label for="input1" class="form-label">Video</label>
                         <input type="file" name="video" class="form-control" id="input1" value="{{ $clecture->url }}">
-                        <div class="success">Video Upload Can take 2-3 minute please wait after click Save Lectre</div>
+                        <div class="success"  style="margin-top: 10px;">Video upload can take upto 2-3 minute please wait after clicking save lecture</div>
                     </div>
                     
                     <div class="form-group col-md-12">

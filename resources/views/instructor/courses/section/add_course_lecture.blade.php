@@ -112,7 +112,7 @@
             <textarea class="form-control mt-2" placeholder="Enter Lecture Content"></textarea>
             <h6 class="mt-3">Add Video</h6>
             <input type="file" name="url" id="video_url" class="form-control" placeholder="Add URL" >
-            <div class="error">Video Upload Can take 2-3 minute please wait after click Save Lectre</div>
+            <div class="success" style="margin-top: 10px;">Video upload can take upto 2-3 minute please wait after clicking save lecture</div>
             <button class="btn btn-primary mt-3" onclick="saveLecture('${courseId}', ${sectionId}, '${containerId}')" >Save Lecture</button>
             <button class="btn btn-secondary mt-3" onclick="hideLectureContainer('${containerId}')" >Cancel</button>
         </div>

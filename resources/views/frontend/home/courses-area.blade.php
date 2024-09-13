@@ -161,7 +161,7 @@
     <div class="col-lg-4 responsive-column-half">
         <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_2">
             <div class="card-image">
-                <img class="card-img-top lazy" src="{{ asset($course->course_image) }}" data-src="{{ asset($course->course_image) }}" alt="Card image cap">
+                <img class="card-img-top lazy" src="{{ getImageUrl($course->course_image) }}" data-src="{{ getImageUrl($course->course_image) }}" alt="Card image cap">
             </div><!-- end card-image -->
             <div class="card-body">
                 <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $course->label }}</h6>

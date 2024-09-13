@@ -6,7 +6,6 @@
         $setting = App\Models\SiteSetting::find(1);
     @endphp
 
-
     <header class="header-menu-area bg-white">
         <div class="header-top pr-150px pl-150px border-bottom border-bottom-gray py-1">
             <div class="container-fluid">
@@ -64,7 +63,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-2">
                             <div class="logo-box">
-                                <a href="{{ url('/') }}" class="logo"><img src="{{ getImageUrl($setting->logo) }}" alt="logo" style="width: 50px; height: 50px;"></a>
+                                <a href="{{ url('/') }}" class="logo"><img src="{{ getImageUrl($setting->logo) }}" alt="logo" style="width: 60px; height: 60px; border-radius:50px;"></a>
                                 <div class="user-btn-action">
                                     <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                         <i class="la la-search"></i>

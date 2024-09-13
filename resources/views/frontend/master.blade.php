@@ -12,9 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    
+    @php
+        $setting = App\Models\SiteSetting::find(1);
+    @endphp
+        
     <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="{{ asset('frontend/images/favicon.png') }}">
+    <link rel="icon" sizes="16x16" href="{{ getImageUrl($setting->logo) }}" style="width: 50px; height: 50px; border-radius 50px;">                     
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
