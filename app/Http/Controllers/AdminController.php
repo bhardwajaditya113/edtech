@@ -25,15 +25,13 @@ class AdminController extends Controller
             ->whereYear('created_at', Carbon::now()->year)
             ->sum('total_amount');
 
-        $data["total_instructors"] = 20;
-        //  User::where('role', 'instructor')
-        //     ->whereYear('created_at', Carbon::now()->year)
-        //     ->count();
+        $data["total_instructors"] = User::where('role', 'instructor')
+            ->whereYear('created_at', Carbon::now()->year)
+            ->count();
 
-        $data["total_users"] = 30;
-        // User::where('role', 'user')
-        //     ->whereYear('created_at', Carbon::now()->year)
-        //     ->count();
+        $data["total_users"] = User::where('role', 'user')
+            ->whereYear('created_at', Carbon::now()->year)
+            ->count();
 
             // dd($data);
 

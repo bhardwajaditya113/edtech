@@ -92,7 +92,7 @@
         </div>
         <div class="card-body">
           <div class="d-flex align-items-center ms-auto font-13 gap-2 mb-3">
-            <span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #14abef"></i>Business</span>
+            <span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #14abef"></i>Total Income</span>
             <span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #ffc107"></i>Instructors</span>
             <span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #000000"></i>Users</span>
           </div>
@@ -103,8 +103,8 @@
         <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-0 row-group text-center border-top">
           <div class="col">
             <div class="p-3">
-              <h5 class="mb-0">{{$total_business}}</h5>
-              <small class="mb-0">Business 
+              <h5 class="mb-0">₹{{$total_business}}</h5>
+              <small class="mb-0">Total Income 
                 <!-- <span> -->
                   <!-- <i class="bx bx-up-arrow-alt align-middle"></i> 2.43%</span> -->
               </small>
@@ -278,7 +278,6 @@
   var instructors = "<?= $total_instructors ?>";
   var users = "<?= $total_users ?>";
 
-  console.log(business, instructors, userss)
 </script>
 <!-- <script src="{{ asset('backend/assets/js/index.js') }}"></script> -->
 @endsection
