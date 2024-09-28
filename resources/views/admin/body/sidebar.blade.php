@@ -5,7 +5,7 @@
 <div class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div>
-            <img src="{{ getImageUrl($setting->logo) }}" class="logo-icon" alt="logo icon" style="width: 50px; height: 50px; border-radius:50px;">
+            <img src="{{ asset('backend/assets/images/logo.jpg') }}" class="logo-icon" alt="logo icon" style="width: 50px; height: 50px; border-radius:50px;">
         </div>
         <div>
             <h4 class="logo-text">Admin</h4>

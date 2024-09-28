@@ -10,7 +10,7 @@
             <div class="col-lg-3 responsive-column-half">
                 <div class="footer-item">
                     <a href="index.html">
-                        <img src="{{ getImageUrl($setting->logo) }}" alt="footer logo" style="width: 50px; height: 50px;" class="footer__logo">
+                        <img src="{{ asset('backend/assets/images/logo.jpg') }}" alt="footer logo" style="width: 50px; height: 50px;" class="footer__logo">
                     </a>
                     <ul class="generic-list-item pt-4">
                         <li><a href="tel:+1631237884">{{ $setting->phone }}</a></li>

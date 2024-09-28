@@ -53,7 +53,7 @@
 							<div class="card-body p-sm-5">
 								<div class="">
 									<div class="mb-3 text-center">
-										<img src="{{ getImageUrl($setting->logo) }}" alt="logo" style="width: 50px; height: 50px; border-radius:50px;">	
+										<img src="{{ asset('backend/assets/images/logo.jpg') }}" alt="logo" style="width: 50px; height: 50px; border-radius:50px;">	
 									</div>
 									<div class="text-center mb-4">
 										<h5 class="">Admin Login</h5>

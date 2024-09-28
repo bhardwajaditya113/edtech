@@ -17,7 +17,7 @@
     @endphp
         
     <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="{{ getImageUrl($setting->logo) }}" style="width: 50px; height: 50px; border-radius 50px;">                     
+    <link rel="icon" sizes="16x16" href="{{ asset('backend/assets/images/logo.jpg') }}" style="width: 50px; height: 50px; border-radius 50px;">                     
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
