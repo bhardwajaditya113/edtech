@@ -193,7 +193,7 @@ class CourseController extends Controller
         }
 
         Course::find($course_id)->update([
-            'video' =>  $save_video,
+            'video' =>  $path,
             'updated_at' => Carbon::now(),
         ]);
         
