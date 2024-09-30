@@ -64,7 +64,7 @@
                     <td><strong>Video : </strong></td>
                     <td>
                         <video width="300" height="200" controls>
-                            <source src="{{ asset($course->video) }}" type="video/mp4">
+                            <source src="{{ getImageUrl($course->video) }}" type="video/mp4">
                         </video>
                     </td>
                 </tr>

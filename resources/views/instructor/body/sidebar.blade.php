@@ -94,35 +94,8 @@
             </ul>
         </li>
        
-        <li class="menu-label">Charts & Maps</li>
-        <li>
-            <a class="has-arrow" href="javascript:;">
-                <div class="parent-icon"><i class="bx bx-line-chart"></i>
-                </div>
-                <div class="menu-title">Charts</div>
-            </a>
-            <ul>
-                <li> <a href="charts-apex-chart.html"><i class='bx bx-radio-circle'></i>Apex</a>
-                </li>
-                <li> <a href="charts-chartjs.html"><i class='bx bx-radio-circle'></i>Chartjs</a>
-                </li>
-                <li> <a href="charts-highcharts.html"><i class='bx bx-radio-circle'></i>Highcharts</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a class="has-arrow" href="javascript:;">
-                <div class="parent-icon"><i class="bx bx-map-alt"></i>
-                </div>
-                <div class="menu-title">Maps</div>
-            </a>
-            <ul>
-                <li> <a href="map-google-maps.html"><i class='bx bx-radio-circle'></i>Google Maps</a>
-                </li>
-                <li> <a href="map-vector-maps.html"><i class='bx bx-radio-circle'></i>Vector Maps</a>
-                </li>
-            </ul>
-        </li>
+        <li class="menu-label">Support</li>
+        
         
         @else
 

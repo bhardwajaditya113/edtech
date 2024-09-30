@@ -188,7 +188,7 @@
                                         
                                         <tr>
                                             <td class="col-md-1">
-                                                <label><img src="{{ asset($item->course->course_image) }}" alt="" style="width: 50px; height:50px;"></label>
+                                                <label><img src="{{ getImageUrl($item->course->course_image) }}" alt="" style="width: 50px; height:50px;"></label>
                                             </td>
 
                                             <td class="col-md-2">
