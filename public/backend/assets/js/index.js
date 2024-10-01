@@ -4,98 +4,107 @@ $(function () {
 
   // chart 1
 
-  var ctx = document.getElementById("chart1").getContext('2d');
+  var ctx = document.getElementById("chart1");
+  if (ctx) {
+    ctx = ctx.getContext('2d');
 
-  var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-  gradientStroke1.addColorStop(0, '#6078ea');
-  gradientStroke1.addColorStop(1, '#17c5ea');
+    var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
+    gradientStroke1.addColorStop(0, '#6078ea');
+    gradientStroke1.addColorStop(1, '#17c5ea');
 
-  var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
-  gradientStroke2.addColorStop(0, '#ff8359');
-  gradientStroke2.addColorStop(1, '#ffdf40');
+    var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
+    gradientStroke2.addColorStop(0, '#ff8359');
+    gradientStroke2.addColorStop(1, '#ffdf40');
 
- /* var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-      datasets: [{
-        label: 'Laptops',
-        data: [65, 59, 80, 81,65, 59, 80, 81,59, 80, 81,65],
-        borderColor: gradientStroke1,
-        backgroundColor: gradientStroke1,
-        hoverBackgroundColor: gradientStroke1,
-        pointRadius: 0,
-        fill: false,
-        borderRadius: 20,
-        borderWidth: 0
-      }, {
-        label: 'Mobiles',
-        data: [28, 48, 40, 19,28, 48, 40, 19,40, 19,28, 48],
-        borderColor: gradientStroke2,
-        backgroundColor: gradientStroke2,
-        hoverBackgroundColor: gradientStroke2,
-        pointRadius: 0,
-        fill: false,
-        borderRadius: 20,
-        borderWidth: 0
-      }]
-    },
+    var gradientStroke3 = ctx.createLinearGradient(0, 0, 0, 300);
+    gradientStroke3.addColorStop(0, '#ee0979');
+    gradientStroke3.addColorStop(1, '#ff6a00');
 
-    options: {
-      maintainAspectRatio: false,
-      barPercentage: 0.5,
-      categoryPercentage: 0.8,
-      plugins: {
-        legend: {
-          display: false,
-        }
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ["Business", "Instructors", "Users"],
+        datasets: [{
+          backgroundColor: [
+            gradientStroke1,
+            gradientStroke2,
+            gradientStroke3
+          ],
+
+          hoverBackgroundColor: [
+            gradientStroke1,
+            gradientStroke2,
+            gradientStroke3
+          ],
+
+          data: [business, instructors, users],
+          borderWidth: [1, 1, 1]
+        }]
       },
-      scales: {
-        y: {
-          beginAtZero: true
+      options: {
+        maintainAspectRatio: false,
+        cutout: 95,
+        plugins: {
+          legend: {
+            display: false,
+          }
         }
+
       }
-    }
-  });*/
+    });
+  }
+  // .getContext('2d');
 
-  console.log("TTT", business)
-  var myChart = new new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ["Business", "Instructors", "Users"],
-      datasets: [{
-        backgroundColor: [
-          gradientStroke1,
-          gradientStroke2,
-          gradientStroke3
-        ],
 
-        hoverBackgroundColor: [
-          gradientStroke1,
-          gradientStroke2,
-          gradientStroke3
-        ],
 
-        data: [business, instructors, users],
-        borderWidth: [1, 1, 1]
-      }]
-    },
-    options: {
-      maintainAspectRatio: false,
-      cutout: 95,
-      plugins: {
-        legend: {
-          display: false,
-        }
-      }
-
-    }
-  });
+  /* var myChart = new Chart(ctx, {
+     type: 'bar',
+     data: {
+       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+       datasets: [{
+         label: 'Laptops',
+         data: [65, 59, 80, 81,65, 59, 80, 81,59, 80, 81,65],
+         borderColor: gradientStroke1,
+         backgroundColor: gradientStroke1,
+         hoverBackgroundColor: gradientStroke1,
+         pointRadius: 0,
+         fill: false,
+         borderRadius: 20,
+         borderWidth: 0
+       }, {
+         label: 'Mobiles',
+         data: [28, 48, 40, 19,28, 48, 40, 19,40, 19,28, 48],
+         borderColor: gradientStroke2,
+         backgroundColor: gradientStroke2,
+         hoverBackgroundColor: gradientStroke2,
+         pointRadius: 0,
+         fill: false,
+         borderRadius: 20,
+         borderWidth: 0
+       }]
+     },
+ 
+     options: {
+       maintainAspectRatio: false,
+       barPercentage: 0.5,
+       categoryPercentage: 0.8,
+       plugins: {
+         legend: {
+           display: false,
+         }
+       },
+       scales: {
+         y: {
+           beginAtZero: true
+         }
+       }
+     }
+   });*/
 
 
   // chart 2
 
-  var ctx = document.getElementById("chart2").getContext('2d');
+  /*var ctx = document.getElementById("chart2").getContext('2d');
 
   var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
   gradientStroke1.addColorStop(0, '#fc4a1a');
@@ -342,9 +351,57 @@ $(function () {
         }
       }
     }
-  });
+  });*/
 
 
+  var instChart = document.getElementById("instructorchart");
+  if (instChart) {
+    instChart = instChart.getContext('2d');
 
+    var gradientStroke1 = instChart.createLinearGradient(0, 0, 0, 300);
+    gradientStroke1.addColorStop(0, '#6078ea');
+    gradientStroke1.addColorStop(1, '#17c5ea');
+
+    var gradientStroke2 = instChart.createLinearGradient(0, 0, 0, 300);
+    gradientStroke2.addColorStop(0, '#ff8359');
+    gradientStroke2.addColorStop(1, '#ffdf40');
+
+    var gradientStroke3 = instChart.createLinearGradient(0, 0, 0, 300);
+    gradientStroke3.addColorStop(0, '#ee0979');
+    gradientStroke3.addColorStop(1, '#ff6a00');
+
+    new Chart(instChart, {
+      type: 'pie',
+      data: {
+        labels: ["Business", "Orders", "Course"],
+        datasets: [{
+          backgroundColor: [
+            gradientStroke1,
+            gradientStroke2,
+            gradientStroke3
+          ],
+
+          hoverBackgroundColor: [
+            gradientStroke1,
+            gradientStroke2,
+            gradientStroke3
+          ],
+
+          data: [business, orders, cource],
+          borderWidth: [1, 1, 1]
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        cutout: 95,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+
+      }
+    });
+  }
 
 });

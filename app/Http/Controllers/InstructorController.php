@@ -16,28 +16,45 @@ use Spatie\Permission\Models\Permission;
 
 class InstructorController extends Controller
 {
-    public function InstructorDashboard(){
-        $data["course"] = Course::count();
-        $data["orders"] = Payment::where('status', 'confirm')->count();
-        $data["questions"] = Question::count();
-        $data["coupons"] = Coupon::count();
-        
-        $data["total_business"] = Payment::where('status', 'confirm')
-            ->whereYear('created_at', Carbon::now()->year)
+    public function InstructorDashboard()
+    {
+        $data["course"] = Course::where('instructor_id', auth()->id())->count();
+        $data["orders"] = Payment::join('orders', 'orders.payment_id', '=', 'payments.id')
+            ->where('instructor_id', auth()->id())
+            ->select('payments.id')
+            ->distinct()
+            ->where('status', 'confirm')->get();
+
+        $data["orders"] = count($data["orders"]);
+
+        $data["questions"] = Question::where('instructor_id', auth()->id())->count();
+        $data["coupons"] = Coupon::where('instructor_id', auth()->id())->count();
+
+        $data["total_business"] = Payment::join('orders', 'orders.payment_id', '=', 'payments.id')
+            ->where('instructor_id', auth()->id())
+            ->select('payments.id', 'payments.total_amount')
+            ->distinct()
+            ->where('status', 'confirm')
+            ->whereYear('payments.created_at', Carbon::now()->year)
             ->sum('total_amount');
 
-        
-            // dd($data);
+        $data["total_course"] = Course::where('instructor_id', auth()->id())
+            ->whereYear('created_at', Carbon::now()->year)
+            ->count();
 
-        // $data['recent_orders'] = Payment::join('orders', 'payments.id', '=', 'orders.payment_id')
-        //     ->select('payments.name', 'total_amount', 'invoice_no', 'order_date', 'price')
-        //     ->where('status', 'pending')
-        //     ->orderBy('orders.created_at', 'DESC')
-        //     ->take(10)->get();
+        $data["total_orders"] = Payment::join('orders', 'orders.payment_id', '=', 'payments.id')
+            ->where('instructor_id', auth()->id())
+            ->whereYear('payments.created_at', Carbon::now()->year)
+            ->select('payments.id')
+            ->distinct()
+            ->where('status', 'confirm')->get();
 
+        $data["total_orders"] = count($data["total_orders"]);
 
-
-        $data['recent_orders'] = Payment::orderBy('payments.created_at', 'DESC')
+        $data['recent_orders'] =  Payment::join('orders', 'orders.payment_id', '=', 'payments.id')
+            ->where('instructor_id', auth()->id())
+            ->select('payments.*')
+            ->distinct()
             ->where('status', 'pending')
             ->take(10)->get();
 
@@ -45,14 +62,15 @@ class InstructorController extends Controller
         return view('instructor.index')->with($data);
     } // End Method
 
-    public function InstructorLogout(Request $request){
+    public function InstructorLogout(Request $request)
+    {
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
 
-         
+
         $notification = array(
             'message' => 'Logout Successfully',
             'alert-type' => 'info'
@@ -61,17 +79,20 @@ class InstructorController extends Controller
         return redirect('/instructor/login')->with($notification);
     }
 
-    public function InstructorLogin(){
+    public function InstructorLogin()
+    {
         return view('instructor.instructor_login');
     }
 
-    public function InstructorProfile(){
+    public function InstructorProfile()
+    {
         $id = Auth::user()->id;
-        $profileData = User::find($id);        
+        $profileData = User::find($id);
         return view('instructor.instructor_profile_view', compact('profileData'));
     } //End Method
 
-    public function InstructorProfileStore(Request $request){
+    public function InstructorProfileStore(Request $request)
+    {
 
         $id = Auth::user()->id;
         $data = User::find($id);
@@ -81,14 +102,14 @@ class InstructorController extends Controller
         $data->phone = $request->phone;
         $data->address = $request->address;
 
-        if ($request->file('photo')){
+        if ($request->file('photo')) {
             $file = $request->file('photo');
-            @unlink(public_path('upload/instructor_images/'.$data->photo));
-            $filename = date('YmdHi').$file->getClientOriginalName();
+            @unlink(public_path('upload/instructor_images/' . $data->photo));
+            $filename = date('YmdHi') . $file->getClientOriginalName();
             $file->move(public_path('upload/instructor_images'), $filename);
             $data['photo'] = $filename;
         }
-        
+
         $data->save();
 
         $notification = array(
@@ -97,24 +118,25 @@ class InstructorController extends Controller
         );
 
         return redirect()->back()->with($notification);
-         
     }
 
-    public function InstructorChangePassword(){
+    public function InstructorChangePassword()
+    {
         $id = Auth::user()->id;
         $profileData = User::find($id);
         return view('instructor.instructor_change_password', compact('profileData'));
     }
 
-    public function InstructorPasswordUpdate(Request $request){
-        
+    public function InstructorPasswordUpdate(Request $request)
+    {
+
         //Validation
         $request->validate([
             'old_password' => 'required',
             'new_password' => 'required|confirmed',
         ]);
 
-        if(!Hash::check($request->old_password, auth::user()->password)){
+        if (!Hash::check($request->old_password, auth::user()->password)) {
 
             $notification = array(
                 'message' => 'Old Password does not match',
@@ -122,7 +144,6 @@ class InstructorController extends Controller
             );
 
             return back()->with($notification);
-        
         }
 
         //Update the new password
@@ -136,7 +157,6 @@ class InstructorController extends Controller
         );
 
         return back()->with($notification);
-
     } //End Method
 
 }
