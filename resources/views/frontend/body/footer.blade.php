@@ -10,9 +10,14 @@
             <div class="col-lg-3 responsive-column-half">
                 <div class="footer-item">
                     <a href="index.html">
+<<<<<<< HEAD
                         <img src="{{ asset('upload/logo/logo.jpeg') }}" alt="footer logo" style="width: 60px; height: 60px; border-radius:50px;" class="footer__logo">
                     </a>
                     <h1 style="font-size: 90%; margin-top: 10px;">Gyanpeeth Global</h1>
+=======
+                        <img src="{{ asset('backend/assets/images/logo.jpg') }}" alt="footer logo" style="width: 50px; height: 50px;" class="footer__logo">
+                    </a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <ul class="generic-list-item pt-4">
                         <li><a href="tel:+1631237884">{{ $setting->phone }}</a></li>
                         <li><a href="mailto:support@wbsite.com">{{ $setting->email }}</a></li>
@@ -32,8 +37,17 @@
                     <h3 class="fs-20 font-weight-semi-bold">Company</h3>
                     <span class="section-divider section--divider"></span>
                     <ul class="generic-list-item">
+<<<<<<< HEAD
                         <li><a href="{{ route('become.instructor') }}">Become a Teacher</a></li>
                         <li><a href="{{ route('blog') }}">Blog</a></li>
+=======
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="{{ route('become.instructor') }}">Become a Teacher</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
@@ -42,7 +56,16 @@
                     <h3 class="fs-20 font-weight-semi-bold">Courses</h3>
                     <span class="section-divider section--divider"></span>
                     <ul class="generic-list-item">
+<<<<<<< HEAD
                         <li><a href="#">Photography</a></li>
+=======
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Hacking</a></li>
+                        <li><a href="#">PHP Learning</a></li>
+                        <li><a href="#">Spoken English</a></li>
+                        <li><a href="#">Self-Driving Car</a></li>
+                        <li><a href="#">Garbage Collectors</a></li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
@@ -51,7 +74,11 @@
                     <h3 class="fs-20 font-weight-semi-bold">Download App</h3>
                     <span class="section-divider section--divider"></span>
                     <div class="mobile-app">
+<<<<<<< HEAD
                         <p class="pb-3 lh-24">Our mobile apps are coming soon</p>
+=======
+                        <p class="pb-3 lh-24">Download our mobile app and learn on the go.</p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <a href="#" class="d-block mb-2 hover-s"><img src="{{asset('frontend/images/appstore.png')}}" alt="App store" class="img-fluid"></a>
                         <a href="#" class="d-block hover-s"><img src="{{asset('frontend/images/googleplay.png')}}" alt="Google play store" class="img-fluid"></a>
                     </div>
@@ -99,4 +126,8 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end copyright-content -->
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

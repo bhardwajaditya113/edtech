@@ -3,7 +3,11 @@
 
 
 @section('title')
+<<<<<<< HEAD
 Login Page | Gyanpeeth Global
+=======
+Login Page | Easy Learning
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 <section class="breadcrumb-area section-padding img-bg-2">
@@ -41,20 +45,32 @@ Login Page | Gyanpeeth Global
             <div class="col-lg-7 mx-auto">
                 <div class="card card-item">
                     <div class="card-body">
+<<<<<<< HEAD
                         <h3 class="card-title text-center fs-24 lh-35 pb-4"></h3>
+=======
+                        <h3 class="card-title text-center fs-24 lh-35 pb-4">Login to Your Account!</h3>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="section-block"></div>
 
     <form method="POST" class="pt-4" action="{{ route('login') }}">
         @csrf
 
+<<<<<<< HEAD
     {{-- <div class="d-flex flex-wrap align-items-center pb-4">
+=======
+    <div class="d-flex flex-wrap align-items-center pb-4">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-google mr-2"></i>Google</button>
         <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-facebook mr-2"></i>Facebook</button>
         <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-twitter mr-2"></i>Twitter</button>
     </div>
     <div class="text-center pt-3 pb-4">
         <div class="icon-element icon-element-md fs-25 shadow-sm">Or</div>
+<<<<<<< HEAD
     </div> --}}
+=======
+    </div>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="input-box">
         <label class="label-text">Email or Username</label>
         <div class="form-group">
@@ -81,10 +97,17 @@ Login Page | Gyanpeeth Global
                 <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox" required>
                 <label class="custom-control-label custom--control-label" for="rememberMeCheckbox">Remember Me</label>
             </div><!-- end custom-control -->
+<<<<<<< HEAD
             {{-- <a href="recover.html" class="btn-text">Forgot my password?</a> --}}
         </div>
         <button class="btn theme-btn" type="submit">Login Account <i class="la la-arrow-right icon ml-1"></i></button>
         <p class="fs-14 pt-2">Don't have an account? <a href="{{ route('register') }}" class="text-color hover-underline">Register</a></p>
+=======
+            <a href="recover.html" class="btn-text">Forgot my password?</a>
+        </div>
+        <button class="btn theme-btn" type="submit">Login Account <i class="la la-arrow-right icon ml-1"></i></button>
+        <p class="fs-14 pt-2">Don't have an account? <a href="sign-up.html" class="text-color hover-underline">Register</a></p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div><!-- end btn-box -->
 </form>
                     </div><!-- end card-body -->
@@ -96,4 +119,8 @@ Login Page | Gyanpeeth Global
 
 
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

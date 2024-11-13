@@ -33,7 +33,11 @@
 
                         <form action="{{ route('delete.section', ['id' => $item->id]) }}" method="POST">
                             @csrf
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <button type="submit" class="btn btn-danger px-2 ms-auto">Delete Section</button> &nbsp;
                         </form>
                             <a class="btn btn-primary" onclick="addLectureDiv({{ $course->id }}, {{ $item->id }}, 'lectureContainer{{ $key }}')" id="addLectureBtn($key)" >Add Lecture</a>
@@ -49,7 +53,11 @@
             </div>
                                 <div class="btn-group">
                                     <a href="{{ route('edit.lecture', ['id' => $lecture->id]) }}" class="btn btn-sm btn-primary">Edit</a> &nbsp;
+<<<<<<< HEAD
                                     <a href="{{ route('delete.lecture', ['id' => $lecture->id]) }}"  class="btn btn-sm btn-danger" id="delete">Delete</a>
+=======
+                                    <a href="{{ route('delete.lecture', ['id' => $lecture->id]) }}"  class="btn btn-sm btn-danger" id="delete">Delete</a> 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 </div>
                             </div>
                             @endforeach
@@ -88,7 +96,11 @@
                 <label for="input1" class="form-label">Course Section</label>
                 <input type="text" name="section_title" class="form-control" id="input1" >
             </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Save changes</button>
@@ -105,14 +117,22 @@
         const newLectureDiv = document.createElement('div');
         newLectureDiv.classList.add('lectureDiv', 'mb-3');
 
+<<<<<<< HEAD
         newLectureDiv.innerHTML = `
+=======
+        newLectureDiv.innerHTML = `    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="container">
             <h6>Lecture Title</h6>
             <input type="text" class="form-control" placeholder="Enter Lecture Title">
             <textarea class="form-control mt-2" placeholder="Enter Lecture Content"></textarea>
             <h6 class="mt-3">Add Video</h6>
             <input type="file" name="url" id="video_url" class="form-control" placeholder="Add URL" >
+<<<<<<< HEAD
             <div class="success" style="margin-top: 10px;">Video upload can take upto 8-10 minute please wait after clicking save lecture</div>
+=======
+            <div class="success" style="margin-top: 10px;">Video upload can take upto 2-3 minute please wait after clicking save lecture</div>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <button class="btn btn-primary mt-3" onclick="saveLecture('${courseId}', ${sectionId}, '${containerId}')" >Save Lecture</button>
             <button class="btn btn-secondary mt-3" onclick="hideLectureContainer('${containerId}')" >Cancel</button>
         </div>
@@ -166,13 +186,18 @@
             console.log(data);
             lectureContainer.style.display = 'none';
             location.reload();
+<<<<<<< HEAD
             // Start Message
+=======
+            // Start Message 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
             const Toast = Swal.mixin({
                   toast: true,
                   position: 'top-end',
                   icon: 'success',
                   showConfirmButton: false,
+<<<<<<< HEAD
                   timer: 6000
             })
             if ($.isEmptyObject(data.error)) {
@@ -193,6 +218,28 @@
                 }
 
               // End Message
+=======
+                  timer: 6000 
+            })
+            if ($.isEmptyObject(data.error)) {
+                    
+                    Toast.fire({
+                    type: 'success',
+                    icon: 'success', 
+                    title: data.success, 
+                    })
+
+            }else{
+               
+           Toast.fire({
+                    type: 'error',
+                    icon: 'error', 
+                    title: data.error, 
+                    })
+                }
+
+              // End Message  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
         })
         .catch(error => {

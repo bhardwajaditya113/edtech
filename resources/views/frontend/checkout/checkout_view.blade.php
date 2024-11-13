@@ -31,7 +31,11 @@
                     <div class="card-body">
                         <h3 class="card-title fs-22 pb-3">Billing Details</h3>
                         <div class="divider"><span></span></div>
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <form method="post" class="row" action="{{ route('payment') }}" enctype="multipart/form-data">
             @csrf
 
@@ -62,9 +66,15 @@
                     <input id="phone" class="form-control form--control" type="tel" name="phone" value="{{ Auth::user()->phone }}">
                 </div>
             </div><!-- end input-box -->
+<<<<<<< HEAD
 
 
 
+=======
+            
+                
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </div><!-- end card-body -->
                 </div><!-- end card -->
     <div class="card card-item">
@@ -78,14 +88,24 @@
                         <label for="cash_on_delivery">Cash On Delivery</label>
                     </div>
 
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="payment-tab-toggle">
                         <input checked="" id="online_payment" name="cash_delivery" type="radio" value="stripe">
                         <label for="online_payment">Online Payment</label>
                     </div>
+<<<<<<< HEAD
 
                 </div><!-- end payment-tab -->
 
+=======
+                    
+                </div><!-- end payment-tab -->
+               
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
 
 
@@ -109,7 +129,11 @@
                             <input type="hidden" name="course_title[]" value="{{ $item->name }}">
                             <input type="hidden" name="price[]" value="{{ $item->price }}">
                             <input type="hidden" name="instructor_id[]" value="{{ $item->options->instructor }}">
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="media media-card border-bottom border-bottom-gray pb-3 mb-3">
                                 <a href="{{ url('course/details/'.$item->id.'/'.$item->options->slug) }}" class="media-img">
                                     <img src="{{ getImageUrl($item->options->image) }}" alt="Cart image">
@@ -119,10 +143,17 @@
                                     <p class="text-black font-weight-semi-bold lh-18">₹{{ $item->price }}</p>
                                 </div>
                             </div><!-- end media -->
+<<<<<<< HEAD
 
                             @endforeach
 
 
+=======
+                            
+                            @endforeach
+
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         </div><!-- end order-details-lists -->
                         <a href="{{ route('mycart') }}" class="btn-text"><i class="la la-edit mr-1"></i>Edit</a>
                     </div><!-- end card-body -->
@@ -131,7 +162,11 @@
                     <div class="card-body">
                         <h3 class="card-title fs-22 pb-3">Order Summary</h3>
                         <div class="divider"><span></span></div>
+<<<<<<< HEAD
 
+=======
+                       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                        @if (Session::has('coupon'))
 
                        <ul class="generic-list-item generic-list-item-flash fs-15">
@@ -143,7 +178,11 @@
                             <span class="text-black">Coupon Name:</span>
                             <span>{{ session()->get('coupon')['coupon_name'] }} ({{ session()->get('coupon')['coupon_discount'] }}%)</span>
                         </li>
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li class="d-flex align-items-center justify-content-between font-weight-semi-bold">
                             <span class="text-black">Coupon Discount:</span>
                             <span>₹{{ session()->get('coupon')['discount_amount'] }}</span>
@@ -152,12 +191,20 @@
                             <span class="text-black">Total:</span>
                             <span>₹{{ session()->get('coupon')['total_amount'] }}</span>
                         </li>
+<<<<<<< HEAD
                     </ul>
+=======
+                    </ul>  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <input type="hidden" name="total" value="{{ $cartTotal }}">
                        @else
 
                        <ul class="generic-list-item generic-list-item-flash fs-15">
+<<<<<<< HEAD
 
+=======
+                       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li class="d-flex align-items-center justify-content-between font-weight-bold">
                             <span class="text-black">Total:</span>
                             <span>₹{{ $cartTotal }}</span>
@@ -166,10 +213,17 @@
                     </ul>
 
                        @endif
+<<<<<<< HEAD
 
 
                         <div class="btn-box border-top border-top-gray pt-3">
                             <p class="fs-14 lh-22 mb-2">Gyanpeeth Global is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+=======
+                       
+                        
+                        <div class="btn-box border-top border-top-gray pt-3">
+                            <p class="fs-14 lh-22 mb-2">Aduca is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <p class="fs-14 lh-22 mb-3">By completing your purchase you agree to these <a href="#" class="text-color hover-underline">Terms of Service.</a></p>
                             <button type="submit" class="btn theme-btn w-100">Proceed<i class="la la-arrow-right icon ml-1"></i></button>
                         </div>
@@ -186,4 +240,8 @@
 
 
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

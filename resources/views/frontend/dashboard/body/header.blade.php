@@ -5,7 +5,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="logo-box logo--box">
+<<<<<<< HEAD
                             <a href="index.html" class="logo"><img src="{{ asset('upload/logo/logo.jpeg') }}" alt="logo"></a>
+=======
+                            <a href="index.html" class="logo"><img src="{{ asset('frontend/images/logo.png') }}" alt="logo"></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                     <i class="la la-search"></i>
@@ -17,19 +21,34 @@
                                     <i class="la la-bars"></i>
                                 </div>
                             </div>
+<<<<<<< HEAD
                         </div>
                         <div class="menu-wrapper">
                             <!-- <form method="post" class="mr-auto ml-0">
+=======
+                        </div><!-- end logo-box -->
+                        <div class="menu-wrapper">
+                            <form method="post" class="mr-auto ml-0">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <div class="form-group mb-0">
                                     <input class="form-control form--control form--control-gray pl-3" type="text" name="search" placeholder="Search for anything">
                                     <span class="la la-search search-icon"></span>
                                 </div>
+<<<<<<< HEAD
                             </form> -->
                             <div class="nav-right-button d-flex align-items-center">
                                 <div class="user-action-wrap d-flex align-items-center">
 
 
                                     <!-- <div class="shop-cart wishlist-cart pr-3 mr-3 border-right border-right-gray">
+=======
+                            </form>
+                            <div class="nav-right-button d-flex align-items-center">
+                                <div class="user-action-wrap d-flex align-items-center">
+                        
+                                   
+                                    <div class="shop-cart wishlist-cart pr-3 mr-3 border-right border-right-gray">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <ul>
                                             <li>
                                                 <p class="shop-cart-btn">
@@ -69,8 +88,13 @@
                                                 </ul>
                                             </li>
                                         </ul>
+<<<<<<< HEAD
                                     </div> -->
                                     <!-- <div class="shop-cart notification-cart pr-3 mr-3 border-right border-right-gray">
+=======
+                                    </div><!-- end shop-cart -->
+                                    <div class="shop-cart notification-cart pr-3 mr-3 border-right border-right-gray">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <ul>
                                             <li>
                                                 <p class="shop-cart-btn">
@@ -119,7 +143,11 @@
                                                 </ul>
                                             </li>
                                         </ul>
+<<<<<<< HEAD
                                     </div> -->
+=======
+                                    </div><!-- end shop-cart -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                                     @php
                                         $id = Auth::user()->id;
@@ -173,6 +201,7 @@
                                                     </li>
                                                     <li>
                                                         <ul class="generic-list-item">
+<<<<<<< HEAD
                                                             <!-- <li>
                                                                 <a href="dashboard-settings.html">
                                                                     <i class="la la-gear mr-1"></i> Settings
@@ -202,11 +231,46 @@
                                                             </li> -->
                                                             <li>
                                                                 <a href="{{ route('user.logout')}}">
+=======
+                                                            <li>
+                                                                <a href="dashboard-settings.html">
+                                                                    <i class="la la-gear mr-1"></i> Settings
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="dashboard-purchase-history.html">
+                                                                    <i class="la la-history mr-1"></i> Purchase history
+                                                                </a>
+                                                            </li>
+                                                            <li><div class="section-block"></div></li>
+                                                            <li>
+                                                                <a href="student-detail.html">
+                                                                    <i class="la la-user mr-1"></i> Public profile
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="dashboard-settings.html">
+                                                                    <i class="la la-edit mr-1"></i> Edit profile
+                                                                </a>
+                                                            </li>
+                                                            <li><div class="section-block"></div></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="la la-question mr-1"></i> Help
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index.html">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                                                     <i class="la la-power-off mr-1"></i> Logout
                                                                 </a>
                                                             </li>
                                                             <li><div class="section-block"></div></li>
+<<<<<<< HEAD
                                                             <!-- <li>
+=======
+                                                            <li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                                                 <a href="#" class="position-relative">
                                                                     <span class="fs-17 font-weight-semi-bold d-block">Aduca for Business</span>
                                                                     <span class="lh-20 d-block fs-14 text-gray">Bring learning to your company</span>
@@ -214,7 +278,11 @@
                                                                     <i class="la la-external-link"></i>
                                                                 </span>
                                                                 </a>
+<<<<<<< HEAD
                                                             </li> -->
+=======
+                                                            </li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -251,9 +319,15 @@
             <li><a href="dashboard-settings.html">Edit profile</a></li>
             <li><a href="index.html">Log out</a></li>
         </ul>
+<<<<<<< HEAD
         <h4 class="off-canvas-menu-heading pt-20px">More from Gyanpeeth Global</h4>
         <ul class="generic-list-item off-canvas-menu-list pt-1">
             <li><a href="for-business.html">Gyanpeeth Global for Business</a></li>
+=======
+        <h4 class="off-canvas-menu-heading pt-20px">More from Aduca</h4>
+        <ul class="generic-list-item off-canvas-menu-list pt-1">
+            <li><a href="for-business.html">Aduca for Business</a></li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <li><a href="#">Get the app</a></li>
             <li><a href="invite.html">Invite friends</a></li>
             <li><a href="contact.html">Help</a></li>
@@ -423,4 +497,8 @@
         </div>
     </div><!-- end mobile-search-form -->
     <div class="body-overlay"></div>
+<<<<<<< HEAD
 </header><!-- end header-menu-area -->
+=======
+</header><!-- end header-menu-area -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

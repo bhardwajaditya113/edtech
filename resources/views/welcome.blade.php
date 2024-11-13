@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
         <title>Gyanpeeth Global</title>
+=======
+        <title>Learning Management System</title>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

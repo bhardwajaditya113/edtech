@@ -2,7 +2,11 @@
 @section('home')
 
 @section('title')
+<<<<<<< HEAD
     Instructor | Gyanpeeth Global
+=======
+    Instructor | Easy Learning
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 <section class="breadcrumb-area py-5 bg-white pattern-bg">
@@ -291,7 +295,11 @@
         </div>
         <div class="divider"><span></span></div>
         <div class="row pt-30px">
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             @foreach ($courses as $course)
             <div class="col-lg-4 responsive-column-half">
                 <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_1{{ $course->id }}">
@@ -311,7 +319,11 @@
                             <div class="course-badge">Bestseller</div>
                             @else
                             @endif
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @if ($course->discount_price == NULL)
                             <div class="course-badge blue">New</div>
                             @else
@@ -324,7 +336,11 @@
                         <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $course->label }}</h6>
                         <h5 class="card-title"><a href="{{ url('course/details/'.$course->id.'/'.$course->course_name_slug) }}">{{ $course->course_name }}</a></h5>
                         <p class="card-text"><a href="{{ route('instructor.details', $course->instructor_id) }}">{{ $course['user']['name'] }}</a></p>
+<<<<<<< HEAD
 
+=======
+                       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="rating-wrap d-flex align-items-center py-2">
                             <div class="review-stars">
                                 <span class="rating-number">4.4</span>
@@ -339,10 +355,17 @@
                         <div class="d-flex justify-content-between align-items-center">
                             @if ($course->discount_price == NULL)
                         <p class="card-price text-black font-weight-bold">₹{{ $course->selling_price }}</p>
+<<<<<<< HEAD
 
                         @else
 
                         <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>
+=======
+                        
+                        @else
+                        
+                        <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         @endif
                             <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
                         </div>
@@ -384,7 +407,11 @@
 
 <!--tooltip templates-->
 @foreach ($courseData as $item)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <div class="tooltip_templates">
     <div id="tooltip_content_1{{ $item->id }}">
         <div class="card card-item">
@@ -393,9 +420,15 @@
                 <h5 class="card-title pb-1"><a href="course-details.html">{{ $item->course_name }}</a></h5>
                 <div class="d-flex align-items-center pb-1">
                     @if ($item->bestseller == 1)
+<<<<<<< HEAD
                     <h6 class="ribbon fs-14 mr-2">Bestseller</h6>
                     @else
                     <h6 class="ribbon fs-14 mr-2">New</h6>
+=======
+                    <h6 class="ribbon fs-14 mr-2">Bestseller</h6>    
+                    @else
+                    <h6 class="ribbon fs-14 mr-2">New</h6>          
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @endif
                     <p class="text-success fs-14 font-weight-medium">Updated<span class="font-weight-bold pl-1">{{$item->created_at->format('M d Y')}}</span></p>
                 </div>
@@ -422,4 +455,8 @@
 </div><!-- end tooltip_templates -->
 @endforeach
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

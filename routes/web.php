@@ -49,14 +49,22 @@ Route::middleware('auth')->group(function () {
     Route::get('/user/logout', [UserController::class, 'UserLogout'])->name('user.logout');
     Route::get('/user/change/password', [UserController::class, 'UserChangePassword'])->name('user.change.password');
     Route::post('/user/password/update', [UserController::class, 'UserPasswordUpdate'])->name('user.password.update');
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //User Wishlist All Route
     Route::controller(WishListController::class)->group(function(){
         Route::get('/user/wishlist', 'AllWishlist')->name('user.wishlist');
         Route::get('/get-wishlist-course/', 'GetWishlistCourse');
         Route::get('/wishlist-remove/{id}', 'RemoveWishlist');
     });
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //User My Course All Route
     Route::controller(OrderController::class)->group(function(){
         Route::get('/my/course', 'MyCourse')->name('my.course');
@@ -82,7 +90,11 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
     Route::post('/admin/profile/store', [AdminController::class, 'AdminProfileStore'])->name('admin.profile.store');
     Route::get('/admin/change/password', [AdminController::class, 'AdminChangePassword'])->name('admin.change.password');
     Route::post('/admin/password/update', [AdminController::class, 'AdminPasswordUpdate'])->name('admin.password.update');
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //Category All Route
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/all/category', 'AllCategory')->name('all.category')->middleware('permission:category.all');
@@ -103,14 +115,23 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
             Route::get('/delete/subcategory/{id}', 'DeleteSubCategory')->name('delete.subcategory');
         });
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //Instructor All Route
     Route::controller(AdminController::class)->group(function(){
         Route::get('/all/instructor', 'AllInstructor')->name('all.instructor');
         Route::post('/update/user/status', 'UpdateUserStatus')->name('update.user.status');
     });
+<<<<<<< HEAD
 
 
+=======
+    
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //Admin Courses All Route
     Route::controller(AdminController::class)->group(function(){
         Route::get('/admin/all/course', 'AdminAllCourse')->name('admin.all.course');
@@ -135,14 +156,22 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
         Route::post('/update/smtp', 'SmtpUpdate')->name('update.smtp');
     });
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     //Site Setting All Route
     Route::controller(SettingController::class)->group(function(){
         Route::get('/site/setting', 'SiteSetting')->name('site.setting');
         Route::post('/update/site', 'UpdateSite')->name('update.site');
     });
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
         //Admin All Order Route
         Route::controller(OrderController::class)->group(function(){
@@ -150,18 +179,30 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
             Route::get('/admin/order/details/{id}', 'AdminOrderDetails')->name('admin.order.details');
             Route::get('/pending-confirm/{id}', 'PendingToConfirm')->name('pending-confirm');
             Route::get('/admin/confirm/order', 'AdminConfirmOrder')->name('admin.confirm.order');
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         });
 
          //Admin Report All Route
          Route::controller(ReportController::class)->group(function(){
             Route::get('/report/view', 'ReportView')->name('report.view');
             Route::post('/search/by/date', 'SearchByDate')->name('search.by.date');
+<<<<<<< HEAD
             Route::post('/search/by/month', 'SearchByMonth')->name('search.by.month');
             Route::post('/search/by/year', 'SearchByYear')->name('search.by.year');
         });
 
 
+=======
+            Route::post('/search/by/month', 'SearchByMonth')->name('search.by.month');     
+            Route::post('/search/by/year', 'SearchByYear')->name('search.by.year');       
+        });
+    
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
          //Admin Review All Route
          Route::controller(ReviewController::class)->group(function(){
             Route::get('/admin/pending/review', 'AdminPendingReview')->name('admin.pending.review');
@@ -175,7 +216,11 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
             Route::get('/all/instructor', 'AllInstructor')->name('all.instructor');
         });
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         //Blog Category All Route
         Route::controller(BlogController::class)->group(function(){
             Route::get('/blog/category', 'AllBlogCategory')->name('blog.category');
@@ -184,7 +229,11 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
             Route::post('/blog/category/update', 'UpdateBlogCategory')->name('blog.category.update');
             Route::get('/delete/blog/categor/{id}', 'DeleteBlogCategory')->name('delete.blog.category');
         });
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         //Blog Post All Route
         Route::controller(BlogController::class)->group(function(){
             Route::get('/blog/post', 'BlogPost')->name('blog.post');
@@ -211,7 +260,11 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
                 Route::post('/import', 'Import')->name('import');
 
             });
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             //Role All Route
             Route::controller(RoleController::class)->group(function(){
                 Route::get('/all/roles', 'AllRoles')->name('all.roles');
@@ -219,7 +272,11 @@ Route::middleware(['auth', 'roles:admin'])->group(function(){
                 Route::post('/store/roles', 'StoreRoles')->name('store.roles');
                 Route::get('/edit/roles/{id}', 'EditRoles')->name('edit.roles');
                 Route::post('/update/roles', 'UpdateRoles')->name('update.roles');
+<<<<<<< HEAD
                 Route::get('/delete/roles/{id}', 'DeleteRoles')->name('delete.roles');
+=======
+                Route::get('/delete/roles/{id}', 'DeleteRoles')->name('delete.roles');          
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 Route::get('/add/roles/permission', 'AddRolesPermission')->name('add.roles.permission');
                 Route::post('/role/permission/store', 'RolePermissionStore')->name('role.permission.store');
                 Route::get('/all/roles/permission', 'AllRolesPermission')->name('all.roles.permission');
@@ -252,7 +309,11 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
     Route::post('/instructor/profile/store', [InstructorController::class, 'InstructorProfileStore'])->name('instructor.profile.store');
     Route::get('/instructor/change/password', [InstructorController::class, 'InstructorChangePassword'])->name('instructor.change.password');
     Route::post('/instructor/password/update', [InstructorController::class, 'InstructorPasswordUpdate'])->name('instructor.password.update');
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
       //Instructor All Route
       Route::controller(CourseController::class)->group(function(){
         Route::get('/all/course', 'AllCourse')->name('all.course');
@@ -261,6 +322,7 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
         Route::post('/store/course', 'StoreCourse')->name('store.course');
         Route::get('/edit/course/{id}', 'EditCourse')->name('edit.course');
         Route::post('/update/course', 'UpdateCourse')->name('update.course');
+<<<<<<< HEAD
         Route::post('/update/course/image', 'UpdateCourseImage')->name('update.course.image');
         Route::post('/update/course/video', 'UpdateCourseVideo')->name('update.course.video');
         Route::post('/update/course/goal', 'UpdateCourseGoal')->name('update.course.goal');
@@ -278,6 +340,25 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
         Route::get('/delete/lecture/{id}', 'DeleteLecture')->name('delete.lecture');
         Route::post('/delete/section/{id}', 'DeleteSection')->name('delete.section');
 
+=======
+        Route::post('/update/course/image', 'UpdateCourseImage')->name('update.course.image'); 
+        Route::post('/update/course/video', 'UpdateCourseVideo')->name('update.course.video'); 
+        Route::post('/update/course/goal', 'UpdateCourseGoal')->name('update.course.goal'); 
+        Route::get('/delete/course/{id}', 'DeleteCourse')->name('delete.course');
+    });
+
+    
+      //Course Section and Lecture All Route
+      Route::controller(CourseController::class)->group(function(){
+        Route::get('/add/course/lecture/{id}', 'AddCourseLecture')->name('add.course.lecture');
+        Route::post('/add/course/section/', 'AddCourseSection')->name('add.course.section');   
+        Route::post('/save-lecture/', 'SaveLecture')->name('save-lecture');      
+        Route::get('/edit/lecture/{id}', 'EditLecture')->name('edit.lecture');   
+        Route::post('/update/course/lecture', 'UpdateCourseLecture')->name('update.course.lecture');         
+        Route::get('/delete/lecture/{id}', 'DeleteLecture')->name('delete.lecture');   
+        Route::post('/delete/section/{id}', 'DeleteSection')->name('delete.section');   
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     });
 
     //Admin All Order Route
@@ -294,7 +375,11 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
             Route::get('/question/details/{id}', 'QuestionDetails')->name('question.details');
             Route::post('/instructor/replay', 'InstructorReplay')->name('instructor.replay');
         });
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
         //Instructor Coupon All Route
         Route::controller(CouponController::class)->group(function(){
@@ -306,7 +391,11 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
             Route::get('/instructor/delete/coupon/{id}', 'InstructorDeleteCoupon')->name('instructor.delete.coupon');
         });
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         //Instructor Review All Route
         Route::controller(ReviewController::class)->group(function(){
             Route::get('/instructor/all/review', 'InstructorAllReview')->name('instructor.all.review');
@@ -317,6 +406,7 @@ Route::middleware(['auth', 'roles:instructor'])->group(function(){
 
 //Route Accessible for All
 Route::get('/instructor/login', [InstructorController::class, 'InstructorLogin'])->name('instructor.login')->middleware(RedirectIfAuthenticated::class);
+<<<<<<< HEAD
 
 Route::get('/course/details/{id}/{slug}', [IndexController::class, 'CourseDetails']);
 
@@ -324,6 +414,15 @@ Route::get('/category/{id}/{slug}', [IndexController::class, 'CategoryCourse']);
 Route::get('/subcategory/{id}/{slug}', [IndexController::class, 'SubCategoryCourse']);
 Route::get('/instructor/details/{id}', [IndexController::class, 'InstructorDetails'])->name('instructor.details');
 
+=======
+  
+Route::get('/course/details/{id}/{slug}', [IndexController::class, 'CourseDetails']);
+  
+Route::get('/category/{id}/{slug}', [IndexController::class, 'CategoryCourse']);
+Route::get('/subcategory/{id}/{slug}', [IndexController::class, 'SubCategoryCourse']);
+Route::get('/instructor/details/{id}', [IndexController::class, 'InstructorDetails'])->name('instructor.details');
+ 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 Route::post('/add-to-wishlist/{course_id}', [WishListController::class, 'AddToWishList']);
 Route::post('/cart/data/store/{id}', [CartController::class, 'AddToCart']);
 Route::post('/buy/data/store/{id}', [CartController::class, 'BuyToCart']);
@@ -365,3 +464,7 @@ Route::get('/blog', [BlogController::class, 'BlogList'])->name('blog');
 
 Route::post('/mark-notification-as-read/{notification}', [CartController::class, 'MarkAsRead']);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

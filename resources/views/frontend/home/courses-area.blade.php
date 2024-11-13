@@ -15,7 +15,11 @@
                 <a class="nav-link" id="business-tab" data-toggle="tab" href="#business" role="tab" aria-controls="business" aria-selected="true">All</a>
             </li>
             @foreach($categories as $category)
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <li class="nav-item">
                 <a class="nav-link" id="business-tab" data-toggle="tab" href="#business{{ $category->id }}" role="tab" aria-controls="business" aria-selected="false">{{ $category->category_name }}</a>
             </li>
@@ -27,16 +31,26 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="business-tab">
                     <div class="row">
+<<<<<<< HEAD
 
          @foreach ($courses as $course)
 
+=======
+                    
+         @foreach ($courses as $course)
+             
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="col-lg-4 responsive-column-half">
             <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_1{{ $course->id }}">
                 <div class="card-image">
                     <a href="{{ url('course/details/'.$course->id.'/'.$course->course_name_slug) }}" class="d-block">
                         <img class="card-img-top lazy" src="{{ getImageUrl($course->course_image) }}" data-src="{{ getImageUrl($course->course_image) }}" alt="Card image cap">
                     </a>
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @php
                         $amount = $course->selling_price - $course->discount_price;
                         $discount = ($amount/$course->selling_price) * 100;
@@ -58,7 +72,11 @@
                         @else
                         <div class="course-badge blue">{{ round($discount) }}%</div>
                         @endif
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </div>
                 </div><!-- end card-image -->
 
@@ -71,7 +89,11 @@
                     <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $course->label }}</h6>
                     <h5 class="card-title"><a href="{{ url('course/details/'.$course->id.'/'.$course->course_name_slug) }}">{{ $course->course_name }}</a></h5>
                     <p class="card-text"><a href="{{ route('instructor.details', $course->instructor_id) }}">{{ $course['user']['name'] }}</a></p>
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="rating-wrap d-flex align-items-center py-2">
                         <div class="review-stars">
                             <span class="rating-number">{{  round($average, 1)}}</span>
@@ -88,7 +110,11 @@
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @elseif ($average == 2 || $average < 3)
 
                             <span class="la la-star"></span>
@@ -106,7 +132,11 @@
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
 
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @elseif ($average == 4 || $average < 5)
 
                             <span class="la la-star"></span>
@@ -128,6 +158,7 @@
                         <span class="rating-total pl-1">({{ count($reviewcount) }})</span>
                     </div><!-- end rating-wrap -->
                     <div class="d-flex justify-content-between align-items-center">
+<<<<<<< HEAD
 
                         @if ($course->discount_price == NULL)
                         <p class="card-price text-black font-weight-bold">₹{{ $course->selling_price }}</p>
@@ -137,13 +168,29 @@
                         <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>
                         @endif
 
+=======
+                       
+                        @if ($course->discount_price == NULL)
+                        <p class="card-price text-black font-weight-bold">₹{{ $course->selling_price }}</p>
+                        
+                        @else
+                        
+                        <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>       
+                        @endif
+                       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist" id="{{ $course->id }}" onclick="addToWishList(this.id)"><i class="la la-heart-o"></i></div>
                     </div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div><!-- end col-lg-4 -->
+<<<<<<< HEAD
         @endforeach
 
+=======
+        @endforeach               
+   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                     </div><!-- end row -->
                 </div><!-- end tab-pane -->
@@ -156,6 +203,7 @@
     @php
         $catwiseCourse = App\Models\Course::where('category_id', $category->id)->where('status', 1)->orderBy('id', 'DESC')->get();
     @endphp
+<<<<<<< HEAD
 
     @forelse ($catwiseCourse as $course)
     <div class="col-lg-4 responsive-column-half">
@@ -188,6 +236,14 @@
                     @endif
 
                 </div>
+=======
+    
+    @forelse ($catwiseCourse as $course)
+    <div class="col-lg-4 responsive-column-half">
+        <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_2">
+            <div class="card-image">
+                <img class="card-img-top lazy" src="{{ getImageUrl($course->course_image) }}" data-src="{{ getImageUrl($course->course_image) }}" alt="Card image cap">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             </div><!-- end card-image -->
             <div class="card-body">
                 <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $course->label }}</h6>
@@ -195,6 +251,7 @@
                 <p class="card-text"><a href="">{{ $course['user']['name'] }}</a></p>
                 <div class="rating-wrap d-flex align-items-center py-2">
                     <div class="review-stars">
+<<<<<<< HEAD
                         <span class="rating-number">{{  round($average, 1)}}</span>
                         @if ($average == 0)
                         <span class="la la-star-o"></span>
@@ -230,11 +287,15 @@
 
                         @elseif ($average == 4 || $average < 5)
 
+=======
+                        <span class="rating-number">4.4</span>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <span class="la la-star"></span>
                         <span class="la la-star"></span>
                         <span class="la la-star"></span>
                         <span class="la la-star"></span>
                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
                         @elseif ($average == 5 || $average < 5)
 
@@ -247,14 +308,25 @@
 
                     </div>
                     <span class="rating-total pl-1">({{ count($reviewcount) }})</span>
+=======
+                    </div>
+                    <span class="rating-total pl-1">(20,230)</span>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end rating-wrap -->
                 <div class="d-flex justify-content-between align-items-center">
                     @if ($course->discount_price == NULL)
                         <p class="card-price text-black font-weight-bold">₹{{ $course->selling_price }}</p>
+<<<<<<< HEAD
 
                         @else
 
                         <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>
+=======
+                        
+                        @else
+                        
+                        <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         @endif
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
                 </div>
@@ -264,6 +336,7 @@
     @empty
         <h5 class="text-danger">No Course Found</h5>
     @endforelse
+<<<<<<< HEAD
 
                     </div><!-- end row -->
                 </div><!-- end tab-pane -->
@@ -272,6 +345,16 @@
             </div><!-- end tab-content -->
             <div class="more-btn-box mt-4 text-center">
                 <a href="#" class="btn theme-btn">Browse all Courses <i class="la la-arrow-right icon ml-1"></i></a>
+=======
+                        
+                    </div><!-- end row -->
+                </div><!-- end tab-pane -->
+                @endforeach
+                
+            </div><!-- end tab-content -->
+            <div class="more-btn-box mt-4 text-center">
+                <a href="course-grid.html" class="btn theme-btn">Browse all Courses <i class="la la-arrow-right icon ml-1"></i></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             </div><!-- end more-btn-box -->
         </div><!-- end container -->
     </div><!-- end card-content-wrapper -->
@@ -284,7 +367,11 @@
 
 <!--tooltip templates-->
 @foreach ($courseData as $item)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <div class="tooltip_templates">
     <div id="tooltip_content_1{{ $item->id }}">
         <div class="card card-item">
@@ -293,9 +380,15 @@
                 <h5 class="card-title pb-1"><a href="course-details.html">{{ $item->course_name }}</a></h5>
                 <div class="d-flex align-items-center pb-1">
                     @if ($item->bestseller == 1)
+<<<<<<< HEAD
                     <h6 class="ribbon fs-14 mr-2">Bestseller</h6>
                     @else
                     <h6 class="ribbon fs-14 mr-2">New</h6>
+=======
+                    <h6 class="ribbon fs-14 mr-2">Bestseller</h6>    
+                    @else
+                    <h6 class="ribbon fs-14 mr-2">New</h6>          
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @endif
                     <p class="text-success fs-14 font-weight-medium">Updated<span class="font-weight-bold pl-1">{{$item->created_at->format('M d Y')}}</span></p>
                 </div>
@@ -313,11 +406,19 @@
                     @endforeach
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
+<<<<<<< HEAD
 
                     <button type="submit" class="btn theme-btn flex-grow-1 mr-3" onclick="addToCart({{ $item->id }}, '{{ $item->course_name }}', '{{ $item->instructor_id }}', '{{ $item->course_name_slug }}' )" ><i class="la la-shopping-cart mr-1 fs-18"></i>Add to Cart</button>
 
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
 
+=======
+                   
+                    <button type="submit" class="btn theme-btn flex-grow-1 mr-3" onclick="addToCart({{ $item->id }}, '{{ $item->course_name }}', '{{ $item->instructor_id }}', '{{ $item->course_name_slug }}' )" ><i class="la la-shopping-cart mr-1 fs-18"></i>Add to Cart</button>
+
+                    <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div>
             </div>
         </div><!-- end card -->

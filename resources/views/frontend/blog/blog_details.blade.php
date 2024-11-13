@@ -3,7 +3,11 @@
 
 
 @section('title')
+<<<<<<< HEAD
 {{ $blog->post_title }} | Gyanpeeth Global
+=======
+{{ $blog->post_title }} | Easy Learning
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 
@@ -41,18 +45,31 @@
                 <div class="card card-item">
                     <div class="card-body">
                         <p class="card-text pb-3">{!! $blog->long_descp !!}</p>
+<<<<<<< HEAD
 
+=======
+                       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="section-block"></div>
                         <h3 class="fs-18 font-weight-semi-bold pt-3">Tags</h3>
                         <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
                             <ul class="generic-list-item generic-list-item-boxed d-flex flex-wrap fs-15">
                                 @foreach ($tags_all as $tag)
+<<<<<<< HEAD
 
                                 <li class="mr-2"><a href="#">{{ ucwords($tag) }}</a></li>
 
 
                                 @endforeach
 
+=======
+                                    
+                                <li class="mr-2"><a href="#">{{ ucwords($tag) }}</a></li>
+                                
+                                
+                                @endforeach
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             </ul>
                             <div class="share-wrap">
                                 <ul class="social-icons social-icons-styled">
@@ -65,7 +82,11 @@
                         </div>
                     </div><!-- end card-body -->
                 </div><!-- end card -->
+<<<<<<< HEAD
                 {{-- <div class="instructor-wrap py-5">
+=======
+                <div class="instructor-wrap py-5">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <h3 class="fs-22 font-weight-semi-bold pb-4">About the author</h3>
                     <div class="media media-card">
                         <div class="media-img rounded-full avatar-lg mr-4">
@@ -83,9 +104,15 @@
                             </ul>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div><!-- end instructor-wrap --> --}}
                 <div class="section-block"></div>
                 {{-- <div class="comments-wrap pt-5" id="comments">
+=======
+                </div><!-- end instructor-wrap -->
+                <div class="section-block"></div>
+                <div class="comments-wrap pt-5" id="comments">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="d-flex align-items-center justify-content-between pb-4">
                         <h3 class="fs-22 font-weight-semi-bold">Comments</h3>
                         <span class="ribbon ribbon-lg">4</span>
@@ -149,9 +176,15 @@
                     <div class="load-more-btn-box text-center pt-3 pb-5">
                         <button class="btn theme-btn theme-btn-sm theme-btn-transparent lh-30"><i class="la la-refresh mr-1"></i> Load More Comment</button>
                     </div>
+<<<<<<< HEAD
                 </div> --}}
                 <div class="section-block"></div>
                 {{-- <div class="add-comment-wrap pt-5">
+=======
+                </div>
+                <div class="section-block"></div>
+                <div class="add-comment-wrap pt-5">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <h3 class="fs-22 font-weight-semi-bold pb-4">Add a Comment</h3>
                     <form method="post" class="row">
                         <div class="input-box col-lg-6">
@@ -184,21 +217,36 @@
                             <button class="btn theme-btn" type="submit">Submit Comment</button>
                         </div><!-- end btn-box -->
                     </form>
+<<<<<<< HEAD
                 </div><!-- end add-comment-wrap --> --}}
             </div><!-- end col-lg-8 -->
             <div class="col-lg-4">
                 <div class="sidebar">
 
+=======
+                </div><!-- end add-comment-wrap -->
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="card card-item">
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Blog Category</h3>
                             <div class="divider"><span></span></div>
                             <ul class="generic-list-item">
                                 @foreach ($bcategory as $cat)
+<<<<<<< HEAD
 
                                 <li><a href="{{ url('blog/cat/list/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
 
 
+=======
+                                    
+                                <li><a href="{{ url('blog/cat/list/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
+                            
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 @endforeach
                             </ul>
                         </div>
@@ -207,9 +255,15 @@
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Recent Posts</h3>
                             <div class="divider"><span></span></div>
+<<<<<<< HEAD
 
                             @foreach ($post as $dpost)
 
+=======
+                            
+                            @foreach ($post as $dpost)
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                             <div class="media media-card border-bottom border-bottom-gray pb-4 mb-4">
                                 <a href="{{ url('blog/details/'.$dpost->post_slug) }}" class="media-img">
@@ -220,6 +274,7 @@
                                     <span class="d-block lh-18 py-1 fs-14">Admin</span>
                                 </div>
                             </div><!-- end media -->
+<<<<<<< HEAD
 
 
                             @endforeach
@@ -231,6 +286,19 @@
                         </div>
                     </div><!-- end card -->
                     {{-- <div class="card card-item">
+=======
+                            
+                            
+                            @endforeach
+
+
+                            <div class="view-all-course-btn-box">
+                                <a href="blog-no-sidebar.html" class="btn theme-btn w-100">View All Posts <i class="la la-arrow-right icon ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+                    <div class="card card-item">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Sidebar Form</h3>
                             <div class="divider"><span></span></div>
@@ -251,8 +319,13 @@
                                 </div>
                             </form>
                         </div>
+<<<<<<< HEAD
                     </div><!-- end card --> --}}
 
+=======
+                    </div><!-- end card -->
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="card card-item">
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Connect & Follow</h3>
@@ -273,4 +346,8 @@
 
 
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

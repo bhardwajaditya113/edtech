@@ -13,7 +13,11 @@
         </div>
         <div class="media-body">
             <h2 class="section__title fs-30">Hello, {{ $profileData->name }}</h2>
+<<<<<<< HEAD
             <!-- <div class="rating-wrap d-flex align-items-center pt-2">
+=======
+            <div class="rating-wrap d-flex align-items-center pt-2">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 <div class="review-stars">
                     <span class="rating-number">4.4</span>
                     <span class="la la-star"></span>
@@ -23,6 +27,7 @@
                     <span class="la la-star-o"></span>
                 </div>
                 <span class="rating-total pl-1">(20,230)</span>
+<<<<<<< HEAD
             </div> -->
         </div><!-- end media-body -->
     </div><!-- end media -->
@@ -33,6 +38,18 @@
 </div> -->
 <div class="row">
     <!-- <div class="col-lg-4 responsive-column-half">
+=======
+            </div><!-- end rating-wrap -->
+        </div><!-- end media-body -->
+    </div><!-- end media -->
+</div><!-- end breadcrumb-content -->
+<div class="section-block mb-5"></div>
+<div class="dashboard-heading mb-5">
+    <h3 class="fs-22 font-weight-semi-bold">Dashboard</h3>
+</div>
+<div class="row">
+    <div class="col-lg-4 responsive-column-half">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
                 <div class="icon-element flex-shrink-0 bg-1 text-white">
@@ -51,10 +68,17 @@
                     <p class="card-text fs-18">Enrolled Courses</p>
                     <h5 class="card-title pt-2 fs-26">11</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div> -->
     <!-- <div class="col-lg-4 responsive-column-half">
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+    <div class="col-lg-4 responsive-column-half">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
                 <div class="icon-element flex-shrink-0 bg-2 text-white">
@@ -95,10 +119,17 @@
                     <p class="card-text fs-18">Active Courses</p>
                     <h5 class="card-title pt-2 fs-26">5</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div> -->
     <!-- <div class="col-lg-4 responsive-column-half">
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+    <div class="col-lg-4 responsive-column-half">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
                 <div class="icon-element flex-shrink-0 bg-3 text-white">
@@ -139,9 +170,15 @@
                     <p class="card-text fs-18">Completed Courses</p>
                     <h5 class="card-title pt-2 fs-26">6</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div>
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="col-lg-4 responsive-column-half">
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
@@ -196,9 +233,15 @@
                     <p class="card-text fs-18">Total Students</p>
                     <h5 class="card-title pt-2 fs-26">30,405</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div>
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="col-lg-4 responsive-column-half">
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
@@ -240,10 +283,17 @@
                     <p class="card-text fs-18">Total Courses</p>
                     <h5 class="card-title pt-2 fs-26">11</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div> -->
     <!-- <div class="col-lg-4 responsive-column-half">
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+    <div class="col-lg-4 responsive-column-half">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="card card-item dashboard-info-card">
             <div class="card-body d-flex align-items-center">
                 <div class="icon-element flex-shrink-0 bg-6 text-white">
@@ -253,9 +303,16 @@
                     <p class="card-text fs-18">Total Earnings</p>
                     <h5 class="card-title pt-2 fs-26">289.12</h5>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div> -->
+=======
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div><!-- end col-lg-4 -->
+
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </div><!-- end row -->
 
 @endsection

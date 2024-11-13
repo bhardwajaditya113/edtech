@@ -9,7 +9,11 @@
                 <h2 class="section__title text-white">All Blog</h2>
             </div>
             <ul class="generic-list-item generic-list-item-white generic-list-item-arrow d-flex flex-wrap align-items-center">
+<<<<<<< HEAD
                 <li><a href="#">Home</a></li>
+=======
+                <li><a href="index.html">Home</a></li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 <li>Blog</li>
             </ul>
         </div><!-- end breadcrumb-content -->
@@ -27,10 +31,17 @@
         <div class="row">
             <div class="col-lg-8 mb-5">
                 <div class="row">
+<<<<<<< HEAD
 
                     @foreach ($blog as $item)
 
 
+=======
+                 
+                    @foreach ($blog as $item)
+                        
+                 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="col-lg-6">
                         <div class="card card-item">
                             <div class="card-image">
@@ -62,6 +73,7 @@
                             </div><!-- end card-body -->
                         </div><!-- end card -->
                     </div><!-- end col-lg-6 -->
+<<<<<<< HEAD
 
                     @endforeach
 
@@ -72,6 +84,18 @@
 
                         {{-- {{ $blog->links() }} --}}
 
+=======
+                 
+                    @endforeach
+                 
+               
+                </div><!-- end row -->
+                <div class="text-center pt-3">
+                    <nav aria-label="Page navigation example" class="pagination-box">
+                        
+                        {{-- {{ $blog->links() }} --}}
+                   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                      {{ $blog->links('vendor.pagination.custom') }}
 
                     </nav>
@@ -79,17 +103,28 @@
             </div><!-- end col-lg-8 -->
             <div class="col-lg-4">
                 <div class="sidebar">
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="card card-item">
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Blog Category</h3>
                             <div class="divider"><span></span></div>
                             <ul class="generic-list-item">
                                 @foreach ($bcategory as $cat)
+<<<<<<< HEAD
 
                                 <li><a href="{{ url('blog/cat/list/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
 
 
+=======
+                                    
+                                <li><a href="{{ url('blog/cat/list/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
+                            
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 @endforeach
                             </ul>
                         </div>
@@ -98,9 +133,15 @@
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Recent Posts</h3>
                             <div class="divider"><span></span></div>
+<<<<<<< HEAD
 
                             @foreach ($post as $dpost)
 
+=======
+                            
+                            @foreach ($post as $dpost)
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                             <div class="media media-card border-bottom border-bottom-gray pb-4 mb-4">
                                 <a href="{{ url('blog/details/'.$dpost->post_slug) }}" class="media-img">
@@ -111,8 +152,13 @@
                                     <span class="d-block lh-18 py-1 fs-14">Admin</span>
                                 </div>
                             </div><!-- end media -->
+<<<<<<< HEAD
 
 
+=======
+                            
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @endforeach
 
 
@@ -121,8 +167,13 @@
                             </div>
                         </div>
                     </div><!-- end card -->
+<<<<<<< HEAD
 
                     {{-- <div class="card card-item">
+=======
+                    
+                    <div class="card card-item">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Sidebar Form</h3>
                             <div class="divider"><span></span></div>
@@ -143,8 +194,13 @@
                                 </div>
                             </form>
                         </div>
+<<<<<<< HEAD
                     </div><!-- end card --> --}}
 
+=======
+                    </div><!-- end card -->
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="card card-item">
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Connect & Follow</h3>
@@ -166,4 +222,8 @@
 
 
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

@@ -3,7 +3,11 @@
 
 
 @section('title')
+<<<<<<< HEAD
 Register Page | Gyanpeeth Global
+=======
+Register Page | Easy Learning
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 
@@ -44,18 +48,30 @@ Register Page | Gyanpeeth Global
                     <div class="card-body">
                         <h3 class="card-title text-center fs-24 lh-35 pb-4">Create an Account and <br> Start Learning!</h3>
                         <div class="section-block"></div>
+<<<<<<< HEAD
 
 
         <form method="POST" class="pt-4" action="{{ route('register') }}">
             @csrf
         {{-- <div class="d-flex flex-wrap align-items-center pb-4">
+=======
+   
+
+        <form method="POST" class="pt-4" action="{{ route('register') }}">
+            @csrf
+        <div class="d-flex flex-wrap align-items-center pb-4">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-google mr-2"></i>Google</button>
             <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-facebook mr-2"></i>Facebook</button>
             <button class="btn theme-btn flex-grow-1 mx-2 mb-2"><i class="la la-twitter mr-2"></i>Twitter</button>
         </div>
         <div class="text-center pt-3 pb-4">
             <div class="icon-element icon-element-md fs-25 shadow-sm">Or</div>
+<<<<<<< HEAD
         </div> --}}
+=======
+        </div>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="input-box">
             <label class="label-text">Name</label>
             <div class="form-group">
@@ -85,11 +101,19 @@ Register Page | Gyanpeeth Global
             </div>
         </div><!-- end input-box -->
 
+<<<<<<< HEAD
 
         <div class="btn-box">
             <div class="custom-control custom-checkbox mb-2 fs-15">
                 <input type="checkbox" class="custom-control-input" id="receiveCheckbox" required>
                 <label class="custom-control-label custom--control-label lh-20" for="receiveCheckbox">Yes! I want to get the most out of Gyanpeeth Global by receiving emails with exclusive deals, personal recommendations and learning tips!</label>
+=======
+        
+        <div class="btn-box">
+            <div class="custom-control custom-checkbox mb-2 fs-15">
+                <input type="checkbox" class="custom-control-input" id="receiveCheckbox" required>
+                <label class="custom-control-label custom--control-label lh-20" for="receiveCheckbox">Yes! I want to get the most out of Aduca by receiving emails with exclusive deals, personal recommendations and learning tips!</label>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             </div><!-- end custom-control -->
             <div class="custom-control custom-checkbox mb-4 fs-15">
                 <input type="checkbox" class="custom-control-input" id="agreeCheckbox" required>
@@ -109,4 +133,8 @@ Register Page | Gyanpeeth Global
     </div><!-- end container -->
 </section><!-- end contact-area -->
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

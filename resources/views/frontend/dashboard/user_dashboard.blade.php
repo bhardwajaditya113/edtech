@@ -13,7 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
+<<<<<<< HEAD
     <link rel="icon" sizes="16x16" href="{{ asset('upload/logo/logo.jpeg') }}">
+=======
+    <link rel="icon" sizes="16x16" href="{{ asset('frontend/images/favicon.png') }}">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
@@ -63,7 +67,11 @@
         </div>
 
         <div class="container-fluid">
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             @yield('userdashboard')
 
             @include('frontend.dashboard.body.footer')
@@ -119,7 +127,11 @@
 {{-- <script>
     new PerfectScrollbar(".app-container")
 </script> --}}
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
@@ -140,9 +152,15 @@ break;
 
 case 'error':
 toastr.error(" {{ Session::get('message') }} ");
+<<<<<<< HEAD
 break;
 }
 @endif
+=======
+break; 
+}
+@endif 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -151,4 +169,8 @@ break;
 
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

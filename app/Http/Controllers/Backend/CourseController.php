@@ -35,13 +35,21 @@ class CourseController extends Controller
     public function GetSubCategory($category_id){
 
         $subcat = SubCategory::where('category_id', $category_id)->orderBy('subcategory_name', 'ASC')->get();
+<<<<<<< HEAD
         return json_encode($subcat);
+=======
+        return json_encode($subcat);        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     }
 
     public function StoreCourse(Request $request){
 
         $request->validate([
+<<<<<<< HEAD
             'video' => 'required|mimes:mp4',
+=======
+            'video' => 'required|mimes:mp4|max:10000',
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         ]);
 
         $courseTitleSlug = Str::slug($request->course_name);
@@ -51,7 +59,11 @@ class CourseController extends Controller
         // $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
         // Image::make($image)->resize(370,246)->save('upload/course/thumbnail/'.$name_gen);
         // $save_url = 'upload/course/thumbnail/'.$name_gen;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $video = $request->file('video');
         $path = "Course/videos/".$courseTitleSlug."/".time() . '_' . $video->getClientOriginalName();
         uploadFile($path, $video);
@@ -59,7 +71,11 @@ class CourseController extends Controller
         // $videoName = time().'.'.$video->getClientOriginalExtension();
         // $video->move(public_path('upload/course/video'), $videoName);
         // $save_video = 'upload/course/video/'.$videoName;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $course_id = Course::insertGetId([
             'category_id' => $request->category_id,
             'subcategory_id' => $request->subcategory_id,
@@ -81,7 +97,11 @@ class CourseController extends Controller
             'highestrated' => $request->highestrated,
             'status' => 1,
             'course_image' => $save_url,
+<<<<<<< HEAD
             'created_at' => Carbon::now(),
+=======
+            'created_at' => Carbon::now(),        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         ]);
 
         //Course Goals Add Form
@@ -103,8 +123,11 @@ class CourseController extends Controller
         return redirect()->route('all.course')->with($notification);
     }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     public function EditCourse($id){
         $course = Course::find($id);
         $goals = Course_goal::where('course_id', $id)->get();
@@ -114,9 +137,15 @@ class CourseController extends Controller
     }
 
     public function UpdateCourse(Request $request){
+<<<<<<< HEAD
 
         $cid = $request->course_id;
 
+=======
+        
+        $cid = $request->course_id; 
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         Course::find($cid)->update([
             'category_id' => $request->category_id,
             'subcategory_id' => $request->subcategory_id,
@@ -148,7 +177,11 @@ class CourseController extends Controller
     public function UpdateCourseImage(Request $request){
         $course_id = $request->id;
         $oldImage = $request->old_img;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $image = $request->file('course_image');
         // $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
 
@@ -158,7 +191,11 @@ class CourseController extends Controller
         // $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
         // Image::make($image)->resize(370,246)->save('upload/course/thumbnail/'.$name_gen);
         // $save_url = 'upload/course/thumbnail/'.$name_gen;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         if(file_exists($oldImage)){
             unlink($oldImage);
         }
@@ -167,7 +204,11 @@ class CourseController extends Controller
             'course_image' =>  $save_url,
             'updated_at' => Carbon::now(),
         ]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Image Updated Successfully',
             'alert-type' => 'success'
@@ -181,7 +222,11 @@ class CourseController extends Controller
     public function UpdateCourseVideo(Request $request){
         $course_id = $request->vid;
         $oldVideo = $request->old_vid;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $video = $request->file('video');
         $courseTitleSlug = $this->getCourseTitleSlug($course_id);
         // $videoName = time().'.'.$video->getClientOriginalExtension();
@@ -189,7 +234,11 @@ class CourseController extends Controller
         // $save_video = 'upload/course/video/'.$videoName;
         $path = "Course/videos/".$courseTitleSlug."/".time() . '_' . $video->getClientOriginalName();
         uploadFile($path, $video);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         if(file_exists($oldVideo)){
             unlink($oldVideo);
         }
@@ -198,7 +247,11 @@ class CourseController extends Controller
             'video' =>  $path,
             'updated_at' => Carbon::now(),
         ]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Video Updated Successfully',
             'alert-type' => 'success'
@@ -217,17 +270,28 @@ class CourseController extends Controller
             Course_goal::where('course_id', $cid)->delete();
 
             $goals = Count($request->course_goals);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 for($i=0; $i < $goals; $i++){
                     $gcount = new Course_goal();
                     $gcount->course_id = $cid;
                     $gcount->goal_name = $request->course_goals[$i];
                     $gcount->save();
                 }
+<<<<<<< HEAD
 
         }
 
 
+=======
+            
+        }
+
+         
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Goals Updated Successfully',
             'alert-type' => 'success'
@@ -240,8 +304,13 @@ class CourseController extends Controller
     public function DeleteCourse($id){
 
         $course = Course::find($id);
+<<<<<<< HEAD
         // unlink($course->course_image);
         // unlink($course->video);
+=======
+        unlink($course->course_image);
+        unlink($course->video);
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
         Course::find($id)->delete();
 
@@ -283,7 +352,11 @@ class CourseController extends Controller
         );
 
         return redirect()->back()->with($notification);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
     }
 
@@ -326,14 +399,22 @@ class CourseController extends Controller
             'content' => $request->content,
         ]);
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Lecture Updated Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->back()->with($notification);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     }
 
     public function getCourseTitleSlug($courseId) {
@@ -347,14 +428,22 @@ class CourseController extends Controller
     public function DeleteLecture($id){
 
         CourseLecture::find($id)->delete();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Lecture Deleted Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->back()->with($notification);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     }
 
     public function DeleteSection($id){
@@ -367,14 +456,22 @@ class CourseController extends Controller
         //Delete the section
         $section->delete();
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         $notification = array(
             'message' => 'Course Section Deleted Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->back()->with($notification);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
     }
 }

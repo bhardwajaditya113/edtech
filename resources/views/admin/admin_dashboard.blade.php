@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="en">
 
+<<<<<<< HEAD
 <head>
+=======
+<head> 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
+<<<<<<< HEAD
 	<link rel="icon" href="{{ asset('upload/logo/logo.jpeg') }}" type="image/png"/>
+=======
+	<link rel="icon" href="{{ asset('backend/assets/images/favicon-32x32.png') }}" type="image/png"/>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 	<!--plugins-->
 
 	<meta name="csrf-token" content="{{ csrf_token() }}">
@@ -91,7 +99,11 @@
 		  } );
 	</script>
 <!-- End DataTable -->
+<<<<<<< HEAD
 
+=======
+	     
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
@@ -112,9 +124,15 @@
 
     case 'error':
     toastr.error(" {{ Session::get('message') }} ");
+<<<<<<< HEAD
     break;
  }
  @endif
+=======
+    break; 
+ }
+ @endif 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </script>
 
 
@@ -129,4 +147,8 @@
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

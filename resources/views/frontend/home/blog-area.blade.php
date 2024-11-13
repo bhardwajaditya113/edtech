@@ -17,7 +17,11 @@
             @foreach ($blog as $item)
             <div class="card card-item">
                 <div class="card-image">
+<<<<<<< HEAD
                     <a href="{{ url('blog/details/'.$item->post_slug) }}">
+=======
+                    <a href="blog-single.html" class="d-block">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <img class="card-img-top" src="{{ asset($item->post_image) }}" alt="Card image cap">
                     </a>
                     <div class="course-badge-labels">
@@ -27,12 +31,21 @@
                 <div class="card-body">
                     <h5 class="card-title"><a href="{{ url('blog/details/'.$item->post_slug) }}">{{ $item->post_title }}</a></h5>
                     <ul class="generic-list-item generic-list-item-bullet generic-list-item--bullet d-flex align-items-center flex-wrap fs-14 pt-2">
+<<<<<<< HEAD
                         <li class="d-flex align-items-center">By <a href="#"> Admin</a></li>
                         {{-- <li class="d-flex align-items-center"><a href="#">4 Comments</a></li>
                         <li class="d-flex align-items-center"><a href="#">130 Likes</a></li> --}}
                     </ul>
                     <div class="d-flex justify-content-between align-items-center pt-3">
                         <a href="{{ url('blog/details/'.$item->post_slug) }}" class="btn theme-btn theme-btn-sm theme-btn-white">Read More <i class="la la-arrow-right icon ml-1"></i></a>
+=======
+                        <li class="d-flex align-items-center">By<a href="#">Admin</a></li>
+                        <li class="d-flex align-items-center"><a href="#">4 Comments</a></li>
+                        <li class="d-flex align-items-center"><a href="#">130 Likes</a></li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center pt-3">
+                        <a href="blog-single.html" class="btn theme-btn theme-btn-sm theme-btn-white">Read More <i class="la la-arrow-right icon ml-1"></i></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="share-wrap">
                             <ul class="social-icons social-icons-styled">
                                 <li class="mr-0"><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
@@ -44,11 +57,20 @@
                     </div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
+<<<<<<< HEAD
 
 
+=======
+            
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             @endforeach
 
 
         </div><!-- end blog-post-carousel -->
     </div><!-- end container -->
+<<<<<<< HEAD
 </section><!-- end blog-area -->
+=======
+</section><!-- end blog-area -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

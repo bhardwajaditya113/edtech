@@ -2,7 +2,11 @@
 @section('home')
 
 @section('title')
+<<<<<<< HEAD
         Gyanpeeth Global
+=======
+        Mirror Square Analytics
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 
@@ -62,7 +66,11 @@
 <!--================================
          START TESTIMONIAL AREA
 =================================-->
+<<<<<<< HEAD
 {{-- @include('frontend.home.testimonial-area') --}}
+=======
+@include('frontend.home.testimonial-area')
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <!--================================
         END TESTIMONIAL AREA
 =================================-->
@@ -82,7 +90,11 @@
 <!--======================================
         START REGISTER AREA
 ======================================-->
+<<<<<<< HEAD
 {{-- @include('frontend.home.register-area') --}}
+=======
+@include('frontend.home.register-area')
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <!--======================================
         END REGISTER AREA
 ======================================-->
@@ -95,7 +107,11 @@
 @include('frontend.home.client-logo-area')
 <!-- ================================
        START CLIENT-LOGO AREA
+<<<<<<< HEAD
 <================================= -->
+=======
+================================= -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
 <!-- ================================
        START BLOG AREA
@@ -119,4 +135,8 @@
 @include('frontend.home.subscriber-area')
 <!--======
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

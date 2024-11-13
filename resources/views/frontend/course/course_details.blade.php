@@ -3,7 +3,11 @@
 
 
 @section('title')
+<<<<<<< HEAD
 {{ $course->course_name }} | Gyanpeeth Global
+=======
+{{ $course->course_name }} | Easy Learning
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @endsection
 
 
@@ -21,10 +25,17 @@
                     <p class="section__desc pt-2 lh-30">{{ $course->course_title }}</p>
                 </div><!-- end section-heading -->
                 <div class="d-flex flex-wrap align-items-center pt-3">
+<<<<<<< HEAD
 
                     @if ($course->bestseller == 1)
                     <h6 class="ribbon ribbon-lg mr-2 bg-3 text-white">Bestseller</h6>
                     @else
+=======
+                    
+                    @if ($course->bestseller == 1)
+                    <h6 class="ribbon ribbon-lg mr-2 bg-3 text-white">Bestseller</h6>
+                    @else    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @endif
 
 
@@ -50,7 +61,11 @@
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @elseif ($average == 2 || $average < 3)
 
                             <span class="la la-star"></span>
@@ -68,7 +83,11 @@
                             <span class="la la-star-o"></span>
                             <span class="la la-star-o"></span>
 
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @elseif ($average == 4 || $average < 5)
 
                             <span class="la la-star"></span>
@@ -144,7 +163,11 @@
                         </ul>
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card bg-gray p-4 rounded">
+<<<<<<< HEAD
                        <h3 class="fs-16 font-weight-semi-bold">Curated for the <a href="#" class="text-color hover-underline">Gyanpeeth Global</a> collection</h3>
+=======
+                       <h3 class="fs-16 font-weight-semi-bold">Curated for the <a href="for-business.html" class="text-color hover-underline">Aduca for Business</a> collection</h3>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card">
                        <h3 class="fs-24 font-weight-semi-bold pb-3">Requirements</h3>
@@ -153,6 +176,7 @@
                        </ul>
                    </div><!-- end course-overview-card -->
                     <div class="course-overview-card border border-gray p-4 rounded">
+<<<<<<< HEAD
                        <h3 class="fs-20 font-weight-semi-bold">Top companies trust Gyanpeeth Global</h3>
                        <p class="fs-15 pb-1">Get your team access to Gyanpeeth's top 5,000+ courses</p>
                         <div class="pb-3">
@@ -164,13 +188,30 @@
                             <img width="70" class="mr-3" src="{{ asset('frontend/images/apple.png')}}" alt="company logo">
                         </div>
                         <a href="#" class="btn theme-btn theme-btn-sm">Try Gyanpeeth Global</a>
+=======
+                       <h3 class="fs-20 font-weight-semi-bold">Top companies trust Aduca</h3>
+                       <p class="fs-15 pb-1">Get your team access to Aduca's top 5,000+ courses</p>
+                        <div class="pb-3">
+                            <img width="85" class="mr-3" src="{{ asset('frontend/images/sponsor-img.png') }}" alt="company logo">
+                            <img width="80" class="mr-3" src="{{ asset('frontend/images/sponsor-img2.png') }}" alt="company logo">
+                            <img width="80" class="mr-3" src="{{ asset('frontend/images/sponsor-img3.png') }}" alt="company logo">
+                            <img width="70" class="mr-3" src="{{ asset('frontend/images/sponsor-img4.png') }}" alt="company logo">
+                        </div>
+                        <a href="for-business.html" class="btn theme-btn theme-btn-sm">Try Aduca for Business</a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card">
                        <h3 class="fs-24 font-weight-semi-bold pb-3">Description</h3>
                        <p class="fs-15 pb-2">{!! $course->description !!}</p>
+<<<<<<< HEAD
 
                        <div class="collapse" id="collapseMore">
                         <h4 class="fs-20 font-weight-semi-bold py-2">Who this course is for:</h4>
+=======
+                      
+                       <div class="collapse" id="collapseMore">
+                        <h4 class="fs-20 font-weight-semi-bold py-2">Who this course is for:</h4>   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <p class="fs-15 pb-2">{{ $course->prerequisites }}</p>
                        </div>
                        <a class="collapse-btn collapse--btn fs-15" data-toggle="collapse" href="#collapseMore" role="button" aria-expanded="false" aria-controls="collapseMore">
@@ -199,13 +240,21 @@
 
                        <div class="curriculum-content">
                            <div id="accordion" class="generic-accordion">
+<<<<<<< HEAD
 
+=======
+                               
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @foreach ($section as $sec)
 
                             @php
                                 $lecture = App\Models\CourseLecture::where('section_id', $sec->id)->get();
                             @endphp
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="card">
                                    <div class="card-header" id="heading{{ $sec->id }}">
                                        <button class="btn btn-link d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapse{{ $sec->id }}" aria-expanded="true" aria-controls="collapse{{ $sec->id }}">
@@ -225,7 +274,11 @@
                                                            <i class="la la-play-circle mr-1"></i>
                                                            {{ $lect->lecture_title }}
                                                        </span>
+<<<<<<< HEAD
 
+=======
+                                                       <span>02:07</span>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                                    </div>
                                                </li>
                                                @endforeach
@@ -234,12 +287,21 @@
                                    </div><!-- end collapse -->
                                </div><!-- end card -->
                                @endforeach
+<<<<<<< HEAD
 
 
                            </div><!-- end generic-accordion -->
                        </div><!-- end curriculum-content -->
                    </div><!-- end course-overview-card -->
 
+=======
+ 
+                               
+                           </div><!-- end generic-accordion -->
+                       </div><!-- end curriculum-content -->
+                   </div><!-- end course-overview-card -->
+                   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                    <div class="course-overview-card pt-4">
                        <h3 class="fs-24 font-weight-semi-bold pb-4">About the instructor</h3>
                        <div class="instructor-wrap">
@@ -248,6 +310,7 @@
                                    <a href="teacher-detail.html" class="media-img d-block">
                                        <img class="lazy" src="{{ (!empty($course->user->photo)) ? url('upload/instructor_images/'.$course->user->photo) : url('upload/no_image.jpg') }}" data-src="images/small-avatar-1.jpg" alt="Avatar image">
                                    </a>
+<<<<<<< HEAD
                                    @php
                                    $enrollmentCount = App\Models\Order::where('course_id', $course->id)->count();
                                @endphp
@@ -257,6 +320,12 @@
                                        {{-- <li><i class="la la-star mr-2 text-color-3"></i> 4.6 Instructor Rating</li>
                                        <li><i class="la la-user mr-2 text-color-3"></i> Students</li>
                                        <li><i class="la la-comment-o mr-2 text-color-3"></i> 2,533 Reviews</li> --}}
+=======
+                                   <ul class="generic-list-item pt-3">
+                                       <li><i class="la la-star mr-2 text-color-3"></i> 4.6 Instructor Rating</li>
+                                       <li><i class="la la-user mr-2 text-color-3"></i> 45,786 Students</li>
+                                       <li><i class="la la-comment-o mr-2 text-color-3"></i> 2,533 Reviews</li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                        <li><i class="la la-play-circle-o mr-2 text-color-3"></i> {{ count($instructorCourses) }} Courses</li>
                                        <li><a href="teacher-detail.html">View all Courses</a></li>
                                    </ul>
@@ -265,8 +334,15 @@
                                    <h5><a href="teacher-detail.html">{{ $course['user']['name'] }}</a></h5>
                                    <span class="d-block lh-18 pt-2 pb-3">Joined {{ Carbon\Carbon::parse($course->user->created_at)->diffForHumans() }}</span>
                                    <p class="text-black lh-18 pb-3">{{ $course['user']['email'] }}</p>
+<<<<<<< HEAD
                                    <div class="collapse" id="collapseMoreTwo">
                                        <p class="pb-3">After learning the hard way, Aditya was determined to become the best teacher he could, and to make his training as painless as possible, so that you, or anyone else with the desire to become an amazing student, could become one.</p>
+=======
+                                   <p class="pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                   <div class="collapse" id="collapseMoreTwo">
+                                       <p class="pb-3">After learning the hard way, Tim was determined to become the best teacher he could, and to make his training as painless as possible, so that you, or anyone else with the desire to become a software developer, could become one.</p>
+                                       <p class="pb-3">If you want to become a financial analyst, a finance manager, an FP&A analyst, an investment banker, a business executive, an entrepreneur, a business intelligence analyst, a data analyst, or a data scientist, <strong class="text-black font-weight-semi-bold">Tim Buchalka's courses are the perfect course to start</strong>.</p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                    </div>
                                    <a class="collapse-btn collapse--btn fs-15" data-toggle="collapse" href="#collapseMoreTwo" role="button" aria-expanded="false" aria-controls="collapseMoreTwo">
                                        <span class="collapse-btn-hide">Show more<i class="la la-angle-down ml-1 fs-14"></i></span>
@@ -284,49 +360,83 @@
                                     <span class="stats-average__count">{{  round($average, 1)}}</span>
                                    <div class="rating-wrap pt-1">
                                        <div class="review-stars">
+<<<<<<< HEAD
 
+=======
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         @if ($average == 0)
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         @elseif ($average == 1 || $average < 2)
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
                                         @elseif ($average == 2 || $average < 3)
 
+=======
+                                        
+                                        @elseif ($average == 2 || $average < 3)
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
 
                                         @elseif ($average == 3 || $average < 4)
 
+=======
+            
+            
+                                        @elseif ($average == 3 || $average < 4)
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
 
                                         @elseif ($average == 4 || $average < 5)
 
+=======
+            
+                                        
+                                        @elseif ($average == 4 || $average < 5)
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
+<<<<<<< HEAD
 
                                         @elseif ($average == 5 || $average < 5)
 
+=======
+            
+                                        @elseif ($average == 5 || $average < 5)
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
@@ -340,7 +450,11 @@
                                    </div><!-- end rating-wrap -->
                                </div><!-- end review-rating-summary -->
 
+<<<<<<< HEAD
 
+=======
+                               
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 <div class="media-body">
 
     @php
@@ -354,7 +468,11 @@
 
         $percentages = [];
 
+<<<<<<< HEAD
         for ($i=5; $i >= 1 ; $i--) {
+=======
+        for ($i=5; $i >= 1 ; $i--) { 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             $ratingCount = $reviewcount->where('rating', $i)->first();
             $count = $ratingCount ? $ratingCount->count : 0;
             $percent = $totalReviews > 0 ? ($count / $totalReviews) * 100 : 0;
@@ -364,13 +482,21 @@
                 'count' => $count,
             ];
         }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     @endphp
 
 
         @if (count($percentages) > 0)
         @foreach ($percentages as $ratingInfo)
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="review-bars d-flex align-items-center mb-2">
         <div class="review-bars__text">{{ $ratingInfo['rating'] }} stars</div>
         <div class="review-bars__fill">
@@ -382,9 +508,15 @@
         </div><!-- end review-bars__fill -->
         <div class="review-bars__percent">{{ number_format($ratingInfo['percent'], 2) }}%</div>
     </div><!-- end review-bars -->
+<<<<<<< HEAD
 
     @endforeach
 
+=======
+ 
+    @endforeach
+ 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     @else
     <p>No Reviews Available</p>
 
@@ -400,13 +532,21 @@
                    <div class="course-overview-card pt-4">
                        <h3 class="fs-24 font-weight-semi-bold pb-4">Reviews</h3>
                        <div class="review-wrap">
+<<<<<<< HEAD
 
+=======
+                           
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 @php
     $reviews = App\Models\Review::where('course_id', $course->id)->where('status', 1)->latest()->limit(5)->get();
 @endphp
 
                         @foreach ($reviews as $item)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                            <div class="media media-card border-bottom border-bottom-gray pb-4 mb-4">
                                <div class="media-img mr-4 rounded-full">
                                    <img class="rounded-full lazy" src="{{ (!empty($item->user->photo)) ? url('upload/user_images/'.$item->user->photo) : url('upload/no_image.jpg') }}" data-src="images/small-avatar-1.jpg" alt="User image">
@@ -414,12 +554,20 @@
                                <div class="media-body">
                                    <div class="d-flex flex-wrap align-items-center justify-content-between pb-1">
                                        <h5>{{ $item->user->name }}</h5>
+<<<<<<< HEAD
 
+=======
+                                  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                        <div class="review-stars">
 
                                         @if($item->rating == NULL)
 
+<<<<<<< HEAD
 
+=======
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
@@ -435,34 +583,56 @@
                                            <span class="la la-star-o"></span>
 
                                         @elseif($item->rating == 2)
+<<<<<<< HEAD
 
+=======
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
 
+<<<<<<< HEAD
 
                                         @elseif($item->rating == 3)
 
+=======
+                                        
+                                        @elseif($item->rating == 3)
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
                                         <span class="la la-star-o"></span>
 
+<<<<<<< HEAD
 
                                         @elseif($item->rating == 4)
 
+=======
+                                        
+                                        @elseif($item->rating == 4)
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star-o"></span>
 
+<<<<<<< HEAD
 
                                         @elseif($item->rating == 5)
 
+=======
+                                        
+                                        @elseif($item->rating == 5)
+                                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
                                         <span class="la la-star"></span>
@@ -486,17 +656,29 @@
 
                            @endforeach
 
+<<<<<<< HEAD
 
+=======
+                           
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                        </div><!-- end review-wrap -->
                        <div class="see-more-review-btn text-center">
                            <button type="button" class="btn theme-btn theme-btn-transparent">Load more reviews</button>
                        </div>
                    </div><!-- end course-overview-card -->
+<<<<<<< HEAD
 
                    @guest
                        <p><b>To Add Course Review. You need to login first <a href="{{ route('login') }}">Login Here</a></b></p>
                    @else
 
+=======
+                   
+                   @guest
+                       <p><b>To Add Course Review. You need to login first <a href="{{ route('login') }}">Login Here</a></b></p>
+                   @else
+                   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                    <div class="course-overview-card pt-4">
                        <h3 class="fs-24 font-weight-semi-bold pb-4">Add a Review</h3>
 
@@ -518,11 +700,19 @@
                 <label for="star1"></label>
             </div><!-- end leave-rating -->
         </div>
+<<<<<<< HEAD
 
             <input type="hidden" name="course_id" value="{{ $course->id }}">
 
             <input type="hidden" name="instructor_id" value="{{ $course->instructor_id }}">
 
+=======
+            
+            <input type="hidden" name="course_id" value="{{ $course->id }}">
+            
+            <input type="hidden" name="instructor_id" value="{{ $course->instructor_id }}">
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <div class="input-box col-lg-12">
                 <label class="label-text">Message</label>
                 <div class="form-group">
@@ -530,11 +720,19 @@
                 </div>
             </div><!-- end input-box -->
             <div class="btn-box col-lg-12">
+<<<<<<< HEAD
 
                 <button class="btn theme-btn" type="submit">Submit Review</button>
             </div><!-- end btn-box -->
         </form>
 
+=======
+                
+                <button class="btn theme-btn" type="submit">Submit Review</button>
+            </div><!-- end btn-box -->
+        </form>
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                    </div><!-- end course-overview-card -->
 
                    @endguest
@@ -570,18 +768,27 @@
                                     </div>
                                 </a>
                             </div><!-- end preview-course-video -->
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @php
                             $amount = $course->selling_price - $course->discount_price;
                             $discount = ($amount/$course->selling_price) * 100;
                         @endphp
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                             <div class="preview-course-feature-content pt-40px">
 
                                 <p class="d-flex align-items-center pb-2">
                                     @if ($course->discount_price == NULL)
                                     <span class="fs-35 font-weight-semi-bold text-black">₹{{ $course->selling_price }}</span>
+<<<<<<< HEAD
                                     @else
                                     <span class="fs-35 font-weight-semi-bold text-black">₹{{ $course->discount_price }}</span>
                                     <span class="before-price mx-1">₹{{ $course->selling_price }}</span>
@@ -589,6 +796,15 @@
 
                                     <span class="price-discount">{{ round($discount) }}% off</span>
 
+=======
+                                    @else    
+                                    <span class="fs-35 font-weight-semi-bold text-black">₹{{ $course->discount_price }}</span>
+                                    <span class="before-price mx-1">₹{{ $course->selling_price }}</span>
+                                    @endif
+                            
+                                    <span class="price-discount">{{ round($discount) }}% off</span>
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 </p>
                                 <p class="preview-price-discount-text pb-35px">
                                     <span class="text-color-3">4 days</span> left at this price!
@@ -614,17 +830,29 @@
                                     <ul class="generic-list-item pb-3">
                                         <li><i class="la la-play-circle-o mr-2 text-color"></i>{{ $course->duration }} hours on-demand video</li>
                                         <li><i class="la la-file mr-2 text-color"></i>{{ $course->resources }} articles</li>
+<<<<<<< HEAD
                                         {{-- <li><i class="la la-file-text mr-2 text-color"></i>12 downloadable resources</li>
                                         <li><i class="la la-code mr-2 text-color"></i>51 coding exercises</li> --}}
                                         <li><i class="la la-key mr-2 text-color"></i>Full lifetime access</li>
                                         {{-- <li><i class="la la-television mr-2 text-color"></i>Access on mobile and TV</li> --}}
+=======
+                                        <li><i class="la la-file-text mr-2 text-color"></i>12 downloadable resources</li>
+                                        <li><i class="la la-code mr-2 text-color"></i>51 coding exercises</li>
+                                        <li><i class="la la-key mr-2 text-color"></i>Full lifetime access</li>
+                                        <li><i class="la la-television mr-2 text-color"></i>Access on mobile and TV</li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                         <li><i class="la la-certificate mr-2 text-color"></i>Certificate of Completion</li>
                                     </ul>
                                     <div class="section-block"></div>
                                     <div class="buy-for-team-container pt-4">
                                         <h3 class="fs-18 font-weight-semi-bold pb-2">Training 5 or more people?</h3>
+<<<<<<< HEAD
                                         <p class="lh-24 pb-3">Get your team access to 3,000+ top Gyanpeeth Global courses anytime, anywhere.</p>
                                         <a href="for-business.html" class="btn theme-btn theme-btn-sm theme-btn-transparent lh-30 w-100">Try Gyanpeeth Global for Business</a>
+=======
+                                        <p class="lh-24 pb-3">Get your team access to 3,000+ top Aduca courses anytime, anywhere.</p>
+                                        <a href="for-business.html" class="btn theme-btn theme-btn-sm theme-btn-transparent lh-30 w-100">Try Aduca for Business</a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                     </div>
                                 </div><!-- end preview-course-incentives -->
                             </div><!-- end preview-course-content -->
@@ -637,11 +865,19 @@
                             <ul class="generic-list-item generic-list-item-flash">
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-clock mr-2 text-color"></i>Duration</span>{{ $course->duration }} hours</li>
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-file-text-o mr-2 text-color"></i>Resources</span> {{ $course->resources }}</li>
+<<<<<<< HEAD
                                 {{-- <li class="d-flex align-items-center justify-content-between"><span><i class="la la-bolt mr-2 text-color"></i>Quizzes</span> 26</li>
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-eye mr-2 text-color"></i>Preview Lessons</span> 4</li> --}}
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-language mr-2 text-color"></i>Language</span> English</li>
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-lightbulb mr-2 text-color"></i>Skill level</span> {{ $course->label }}</li>
                                 {{-- <li class="d-flex align-items-center justify-content-between"><span><i class="la la-users mr-2 text-color"></i>Students</span> 30,506</li> --}}
+=======
+                                <li class="d-flex align-items-center justify-content-between"><span><i class="la la-bolt mr-2 text-color"></i>Quizzes</span> 26</li>
+                                <li class="d-flex align-items-center justify-content-between"><span><i class="la la-eye mr-2 text-color"></i>Preview Lessons</span> 4</li>
+                                <li class="d-flex align-items-center justify-content-between"><span><i class="la la-language mr-2 text-color"></i>Language</span> English</li>
+                                <li class="d-flex align-items-center justify-content-between"><span><i class="la la-lightbulb mr-2 text-color"></i>Skill level</span> {{ $course->label }}</li>
+                                <li class="d-flex align-items-center justify-content-between"><span><i class="la la-users mr-2 text-color"></i>Students</span> 30,506</li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <li class="d-flex align-items-center justify-content-between"><span><i class="la la-certificate mr-2 text-color"></i>Certificate</span>{{ $course->certificate }}</li>
                             </ul>
                         </div>
@@ -661,9 +897,15 @@
                         <div class="card-body">
                             <h3 class="card-title fs-18 pb-2">Related Courses</h3>
                             <div class="divider"><span></span></div>
+<<<<<<< HEAD
 
                             @foreach ($relatedCourses as $related)
 
+=======
+                            
+                            @foreach ($relatedCourses as $related)
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="media media-card border-bottom border-bottom-gray pb-4 mb-4">
                                 <a href="course-details.html" class="media-img">
                                     <img class="mr-3 lazy" src="{{ asset($related->course_image) }}" data-src="{{ asset($related->course_image) }}" alt="Related course image">
@@ -673,22 +915,37 @@
                                     <span class="d-block lh-18 py-1 fs-14">{{ $related['user']['name'] }}</span>
                                     @if ($related->discount_price == NULL)
                                     <p class="text-black font-weight-semi-bold lh-18 fs-15">₹{{ $related->selling_price }}</p>
+<<<<<<< HEAD
 
                                     @else
                                     <p class="text-black font-weight-semi-bold lh-18 fs-15">₹{{ $related->discount_price }}<span class="before-price fs-14">₹{{ $related->selling_price }}</span></p>
 
+=======
+                               
+                                    @else
+                                    <p class="text-black font-weight-semi-bold lh-18 fs-15">₹{{ $related->discount_price }}<span class="before-price fs-14">₹{{ $related->selling_price }}</span></p>
+                               
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                     @endif
                                 </div>
                             </div><!-- end media -->
                             @endforeach
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                             <div class="view-all-course-btn-box">
                                 <a href="course-grid.html" class="btn theme-btn w-100">View All Courses <i class="la la-arrow-right icon ml-1"></i></a>
                             </div>
                         </div>
                     </div><!-- end card -->
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end sidebar -->
             </div><!-- end col-lg-4 -->
         </div><!-- end row -->
@@ -706,14 +963,24 @@
         <div class="related-course-wrap">
             <h3 class="fs-28 font-weight-semi-bold pb-35px">More Courses by <a href="teacher-detail.html" class="text-color hover-underline">{{ $course['user']['name'] }}</a></h3>
             <div class="view-more-carousel-2 owl-action-styled">
+<<<<<<< HEAD
 
                 @foreach ($instructorCourses as $inscourse)
 
+=======
+                
+                @foreach ($instructorCourses as $inscourse)
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 @php
                 $amount = $inscourse->selling_price - $inscourse->discount_price;
                 $discount = ($amount/$inscourse->selling_price) * 100;
             @endphp
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 <div class="card card-item">
                     <div class="card-image">
                         <a href="{{ url('course/details/'.$inscourse->id.'/'.$inscourse->course_name_slug) }}" class="d-block">
@@ -724,7 +991,11 @@
                         <div class="course-badge">Bestseller</div>
                         @else
                         @endif
+<<<<<<< HEAD
 
+=======
+                          
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         @if ($inscourse->discount_price == NULL)
                         <div class="course-badge blue">New</div>
                         @else
@@ -750,10 +1021,17 @@
                         <div class="d-flex justify-content-between align-items-center">
                             @if ($inscourse->discount_price == NULL)
                             <p class="card-price text-black font-weight-bold">₹{{ $inscourse->selling_price }}</p>
+<<<<<<< HEAD
 
                             @else
 
                             <p class="card-price text-black font-weight-bold">₹{{ $inscourse->discount_price }}<span class="before-price font-weight-medium">₹{{ $inscourse->selling_price }}</span></p>
+=======
+                            
+                            @else
+                            
+                            <p class="card-price text-black font-weight-bold">₹{{ $inscourse->discount_price }}<span class="before-price font-weight-medium">₹{{ $inscourse->selling_price }}</span></p>       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             @endif
                             <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
                         </div>
@@ -792,7 +1070,11 @@
             </div><!-- end col-lg-9 -->
             <div class="col-lg-3">
                 <div class="cta-btn-box text-right">
+<<<<<<< HEAD
                     <a href="{{ route('become.instructor') }}" class="btn theme-btn">Teach on Gyanpeeth Global <i class="la la-arrow-right icon ml-1"></i> </a>
+=======
+                    <a href="become-a-teacher.html" class="btn theme-btn">Tech on Aduca <i class="la la-arrow-right icon ml-1"></i> </a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div>
             </div><!-- end col-lg-3 -->
         </div><!-- end row -->
@@ -823,9 +1105,15 @@
             </div><!-- end modal-body -->
             <div class="modal-footer justify-content-center border-top-gray">
                 <ul class="social-icons social-icons-styled">
+<<<<<<< HEAD
                     <li><a href="https://www.facebook.com/" class="facebook-bg"><i class="la la-facebook"></i></a></li>
                     <li><a href="https://x.com/" class="twitter-bg"><i class="la la-twitter"></i></a></li>
                     <li><a href="https://www.instagram.com/" class="instagram-bg"><i class="la la-instagram"></i></a></li>
+=======
+                    <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
+                    <li><a href="#" class="twitter-bg"><i class="la la-twitter"></i></a></li>
+                    <li><a href="#" class="instagram-bg"><i class="la la-instagram"></i></a></li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </ul>
             </div><!-- end modal-footer -->
         </div><!-- end modal-content-->
@@ -862,7 +1150,11 @@
             <div class="modal-header border-bottom-gray">
                 <div class="pr-2">
                     <h5 class="modal-title fs-19 font-weight-semi-bold lh-24" id="reportModalTitle">Report Abuse</h5>
+<<<<<<< HEAD
                     <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Gyanpeeth Global staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+=======
+                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Aduca staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <a href="contact.html" class="text-color hover-underline">Support team here</a>.</p>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -879,7 +1171,11 @@
                                     <option value>-- Select One --</option>
                                     <option value="1">Inappropriate Course Content</option>
                                     <option value="2">Inappropriate Behavior</option>
+<<<<<<< HEAD
                                     <option value="3">Gyanpeeth Global Policy Violation</option>
+=======
+                                    <option value="3">Aduca Policy Violation</option>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                     <option value="4">Spammy Content</option>
                                     <option value="5">Other</option>
                                 </select>
@@ -902,4 +1198,8 @@
     </div><!-- end modal-dialog -->
 </div><!-- end modal -->
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

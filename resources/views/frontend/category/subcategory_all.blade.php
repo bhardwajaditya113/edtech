@@ -274,12 +274,18 @@
                             </div><!-- end custom-control -->
                         </div>
                     </div><!-- end card -->
+<<<<<<< HEAD
 
 
+=======
+                    
+                  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end sidebar -->
             </div><!-- end col-lg-4 -->
             <div class="col-lg-8">
                 <div class="row">
+<<<<<<< HEAD
                     @foreach ($courses as $course)
 
         <div class="col-lg-4 responsive-column-half">
@@ -398,6 +404,11 @@
 
                     {{-- @foreach ($courses as $course)
 
+=======
+                    
+                    @foreach ($courses as $course)
+                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="col-lg-6 responsive-column-half">
                         <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_1">
                             <div class="card-image">
@@ -405,7 +416,11 @@
                                     <img class="card-img-top lazy" src="{{ asset($course->course_image) }}" data-src="images/img8.jpg" alt="Card image cap">
                                 </a>
 
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @php
                     $amount = $course->selling_price - $course->discount_price;
                     $discount = ($amount/$course->selling_price) * 100;
@@ -428,7 +443,11 @@
                                 <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $course->label }}</h6>
                                 <h5 class="card-title"><a href="{{ url('course/details/'.$course->id.'/'.$course->course_name_slug) }}">{{ $course->course_name }}</a></h5>
                                 <p class="card-text"><a href="">{{ $course['user']['name'] }}</a></p>
+<<<<<<< HEAD
 
+=======
+                              
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <div class="rating-wrap d-flex align-items-center py-2">
                                     <div class="review-stars">
                                         <span class="rating-number">4.4</span>
@@ -443,20 +462,34 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     @if ($course->discount_price == NULL)
                                     <p class="card-price text-black font-weight-bold">₹{{ $course->selling_price }}</p>
+<<<<<<< HEAD
 
                                     @else
 
                                     <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>
+=======
+                                    
+                                    @else
+                                    
+                                    <p class="card-price text-black font-weight-bold">₹{{ $course->discount_price }}<span class="before-price font-weight-medium">₹{{ $course->selling_price }}</span></p>       
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                     @endif
                                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
                                 </div>
                             </div><!-- end card-body -->
                         </div><!-- end card -->
                     </div><!-- end col-lg-6 -->
+<<<<<<< HEAD
 
                     @endforeach --}}
 
 
+=======
+                    
+                    @endforeach
+                    
+                   
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end row -->
                 <div class="text-center pt-3">
                     <nav aria-label="Page navigation example" class="pagination-box">
@@ -493,4 +526,8 @@
 
 
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

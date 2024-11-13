@@ -44,11 +44,19 @@
                                 @auth
                                 <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i class="la la-sign-in mr-1"></i><a href="{{ route('dashboard') }}"> Dashboard</a></li>
                                 <li class="d-flex align-items-center"><i class="la la-user mr-1"></i><a href="{{ route('user.logout') }}"> Logout</a></li>
+<<<<<<< HEAD
 
                                 @else
                                 <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i class="la la-sign-in mr-1"></i><a href="{{ route('login') }}"> Login</a></li>
                                 <li class="d-flex align-items-center"><i class="la la-user mr-1"></i><a href="{{ route('register') }}"> Register</a></li>
 
+=======
+                           
+                                @else
+                                <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i class="la la-sign-in mr-1"></i><a href="{{ route('login') }}"> Login</a></li>
+                                <li class="d-flex align-items-center"><i class="la la-user mr-1"></i><a href="{{ route('register') }}"> Register</a></li>
+                           
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 @endauth
                             </ul>
                         </div><!-- end header-widget -->
@@ -63,8 +71,12 @@
                     <div class="row align-items-center">
                         <div class="col-lg-2">
                             <div class="logo-box">
+<<<<<<< HEAD
                                 <a href="{{ url('/') }}" class="logo"><img src="{{ asset('upload/logo/logo.jpeg') }}" alt="logo" style="width: 60px; height: 60px; border-radius:50px;"></a>
                                 <h1 style="font-size: 90%; margin-left: 10px;">Gyanpeeth Global</h1>
+=======
+                                <a href="{{ url('/') }}" class="logo"><img src="{{ asset('backend/assets/images/logo.jpg') }}" alt="logo" style="width: 60px; height: 60px; border-radius:50px;"></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <div class="user-btn-action">
                                     <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                         <i class="la la-search"></i>
@@ -87,13 +99,21 @@
             <div class="menu-wrapper">
                 <div class="menu-category">
                     <ul>
+<<<<<<< HEAD
                         <li class="categories">
+=======
+                        <li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <a href="#">Categories <i class="la la-angle-down fs-12"></i></a>
                             <ul class="cat-dropdown-menu">
                                 @foreach ($categories as $cat)
                                 @php
                                     $subcategories = App\Models\SubCategory::where('category_id', $cat->id)->get();
+<<<<<<< HEAD
                                 @endphp
+=======
+                                @endphp      
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <li>
                                     <a href="{{ url('category/'.$cat->id.'/'.$cat->category_slug) }}">{{ $cat->category_name }} <i class="la la-angle-right"></i></a>
                                     <ul class="sub-menu">
@@ -102,18 +122,27 @@
                                         @endforeach
                                     </ul>
                                 </li>
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 @endforeach
 
                             </ul>
                         </li>
                     </ul>
                 </div><!-- end menu-category -->
+<<<<<<< HEAD
                 {{-- <form method="post">
+=======
+                <form method="post">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="form-group mb-0">
                         <input class="form-control form--control pl-3" type="text" name="search" placeholder="Search for anything">
                         <span class="la la-search search-icon"></span>
                     </div>
+<<<<<<< HEAD
                 </form> --}}
                 <nav class="main-menu">
                     <ul>
@@ -121,17 +150,34 @@
                             <a href="{{ url('/') }}">Home</a>
                         </li>
                         {{--
+=======
+                </form>
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                            
+                        </li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li>
                             <a href="#">courses <i class="la la-angle-down fs-12"></i></a>
                             <ul class="dropdown-menu-item">
                                 <li><a href="course-grid.html">course grid</a></li>
                                 <li><a href="course-list.html">course list</a></li>
                             </ul>
+<<<<<<< HEAD
                         </li> --}}
 
                         <li>
                             <a href="{{ route('blog') }}">blog</a>
 
+=======
+                        </li>
+                        
+                        <li>
+                            <a href="{{ route('blog') }}">blog</a>
+                            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         </li>
                     </ul><!-- end ul -->
                 </nav><!-- end main-menu -->
@@ -144,7 +190,11 @@
                             </p>
 
                             <ul class="cart-dropdown-menu">
+<<<<<<< HEAD
 
+=======
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                              <div id="miniCart">
 
                              </div>
@@ -163,7 +213,11 @@
                     </ul>
                 </div><!-- end shop-cart -->
                 <div class="nav-right-button">
+<<<<<<< HEAD
                     <a href="{{ route('register') }}" class="btn theme-btn d-none d-lg-inline-block"><i class="la la-user-plus mr-1"></i> Admission</a>
+=======
+                    <a href="admission.html" class="btn theme-btn d-none d-lg-inline-block"><i class="la la-user-plus mr-1"></i> Admission</a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end nav-right-button -->
             </div><!-- end menu-wrapper -->
         </div><!-- end col-lg-10 -->
@@ -394,9 +448,13 @@
     <!--======================================
             END HEADER AREA
     ======================================-->
+<<<<<<< HEAD
 
     <style>
         .categories{
             margin-right: 700px;
         }
         </style>
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

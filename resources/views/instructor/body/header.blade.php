@@ -283,12 +283,20 @@
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center" href="{{route('instructor.change.password')}}"><i class="bx bx-cog fs-5"></i><span>Change Password</span></a>
                     </li>
+<<<<<<< HEAD
                     <!-- <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-home-circle fs-5"></i><span>Dashboard</span></a>
+=======
+                    <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-home-circle fs-5"></i><span>Dashboard</span></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-dollar-circle fs-5"></i><span>Earnings</span></a>
                     </li>
                     <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-download fs-5"></i><span>Downloads</span></a>
+<<<<<<< HEAD
                     </li> -->
+=======
+                    </li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <li>
                         <div class="dropdown-divider mb-0"></div>
                     </li>

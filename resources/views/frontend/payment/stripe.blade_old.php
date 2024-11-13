@@ -6,24 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<<<<<<< HEAD
-    <title>Payment Page</title>
-=======
-    <title>Razorpay Page</title>
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
+    <title>Stripe Page</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<<<<<<< HEAD
-    <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="{{ asset('upload/logo/logo.jpeg') }}">
-=======
     
     <!-- Favicon -->
     <link rel="icon" sizes="16x16" href="{{ asset('frontend/') }}images/favicon.png">
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -80,31 +71,19 @@
     background-color: #fefde5 !important;}
   </style>
   <!-- /////////////////////////----------End CSS ------- ///////////////////////////// -->
-<<<<<<< HEAD
-
-=======
   
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
 <section class="breadcrumb-area section-padding img-bg-2">
     <div class="overlay"></div>
     <div class="container">
         <div class="breadcrumb-content d-flex flex-wrap align-items-center justify-content-between">
             <div class="section-heading">
-<<<<<<< HEAD
-                <h2 class="section__title text-white">Payment</h2>
-=======
-                <h2 class="section__title text-white">Razorpay</h2>
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
+                <h2 class="section__title text-white">Stripe</h2>
             </div>
             <ul class="generic-list-item generic-list-item-white generic-list-item-arrow d-flex flex-wrap align-items-center">
                 <li><a href="index.html">Home</a></li>
                 <li>Pages</li>
-<<<<<<< HEAD
-                <li>Payment</li>
-=======
-                <li>Razorpay</li>
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
+                <li>Stripe</li>
             </ul>
         </div><!-- end breadcrumb-content -->
     </div><!-- end container -->
@@ -124,13 +103,8 @@
                     <div class="card-body">
                         <h3 class="card-title fs-22 pb-3">Billing Details</h3>
                         <div class="divider"><span></span></div>
-<<<<<<< HEAD
-
-
-=======
        
        
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
             <div class="input-box col-lg-6">
                 <label class="label-text">First Name</label>
@@ -159,44 +133,52 @@
                     <input id="phone" class="form-control form--control" type="tel" name="phone" value="{{ Auth::user()->phone }}">
                 </div>
             </div><!-- end input-box -->
-<<<<<<< HEAD
-
-
-
-=======
             
                 
         
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     </div><!-- end card-body -->
                 </div><!-- end card -->
     <div class="card card-item">
-    <form action="{{ route('stripe_order') }}" name="razorpayform" method="post" id="payment-form">
-        @csrf
+        <div class="card-body">
+            <h3 class="card-title fs-22 pb-3">Select Payment Method</h3>
+            <div class="divider"><span></span></div>
 
-        <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
-        <input type="hidden" name="razorpay_signature" id="razorpay_signature">
-        <input type="hidden" name="razorpay_order_id" value="{{ $data['order_id'] }}">
-        <div class="form-row">
-            <!-- <label for="card-element">Credit or Debit Card</label> -->
-<<<<<<< HEAD
+            <div class="col-lg-12">
+                <div class="border cart-totals p-40">
+                    <div class="divider-2 mb-30">
+                        <div class="table-responsive order_table checkout">
+                            <form action="{{ route('stripe_order') }}" method="post" id="payment-form">
+                                @csrf
 
-=======
-            
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
-            <input type="hidden" name="name" value="{{ $data['name'] }}" >
-            <input type="hidden" name="email" value="{{ $data['email'] }}" >
-            <input type="hidden" name="phone" value="{{ $data['phone'] }}" >
-            <input type="hidden" name="address" value="{{ $data['address'] }}" >
+                                <div class="form-row">
+                                    <label for="card-element">Credit or Debit Card</label>
+                                    
+                                    <input type="hidden" name="name" value="{{ $data['name'] }}" >
+                                    <input type="hidden" name="email" value="{{ $data['email'] }}" >
+                                    <input type="hidden" name="phone" value="{{ $data['phone'] }}" >
+                                    <input type="hidden" name="address" value="{{ $data['address'] }}" >
 
 
-        </div>
 
-<<<<<<< HEAD
-    </form>
-=======
-    </form> 
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
+                                    <div id="card-element">
+                                        {{-- // stripe element will be inserted here --}}
+                                    </div> 
+
+                                    <div id="card-errors" row="alert"></div>
+
+                                </div>
+                                <br>
+                                
+                                <button class="btn btn-primary">Submit Payment</button>
+
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div><!-- end card-body -->
     </div><!-- end card -->
             </div><!-- end col-lg-7 -->
             <div class="col-lg-5">
@@ -213,31 +195,20 @@
                             <input type="hidden" name="course_title[]" value="{{ $item->name }}">
                             <input type="hidden" name="price[]" value="{{ $item->price }}">
                             <input type="hidden" name="instructor_id[]" value="{{ $item->options->instructor }}">
-<<<<<<< HEAD
-
-=======
                                 
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="media media-card border-bottom border-bottom-gray pb-3 mb-3">
                                 <a href="{{ url('course/details/'.$item->id.'/'.$item->options->slug) }}" class="media-img">
-                                    <img src="{{ getImageUrl($item->options->image) }}" alt="Cart image">
+                                    <img src="{{ asset($item->options->image) }}" alt="Cart image">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="fs-15 pb-2"><a href="{{ url('course/details/'.$item->id.'/'.$item->options->slug) }}">{{ $item->name }}</a></h5>
                                     <p class="text-black font-weight-semi-bold lh-18">₹{{ $item->price }}</p>
                                 </div>
                             </div><!-- end media -->
-<<<<<<< HEAD
-
-                            @endforeach
-
-
-=======
                             
                             @endforeach
 
                             
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         </div><!-- end order-details-lists -->
                         <a href="{{ route('mycart') }}" class="btn-text"><i class="la la-edit mr-1"></i>Edit</a>
                     </div><!-- end card-body -->
@@ -246,11 +217,7 @@
                     <div class="card-body">
                         <h3 class="card-title fs-22 pb-3">Order Summary</h3>
                         <div class="divider"><span></span></div>
-<<<<<<< HEAD
-
-=======
                        
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                        @if (Session::has('coupon'))
 
                        <ul class="generic-list-item generic-list-item-flash fs-15">
@@ -262,11 +229,7 @@
                             <span class="text-black">Coupon Name:</span>
                             <span>{{ session()->get('coupon')['coupon_name'] }} ({{ session()->get('coupon')['coupon_discount'] }}%)</span>
                         </li>
-<<<<<<< HEAD
-
-=======
                         
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li class="d-flex align-items-center justify-content-between font-weight-semi-bold">
                             <span class="text-black">Coupon Discount:</span>
                             <span>₹{{ session()->get('coupon')['discount_amount'] }}</span>
@@ -275,20 +238,12 @@
                             <span class="text-black">Total:</span>
                             <span>₹{{ session()->get('coupon')['total_amount'] }}</span>
                         </li>
-<<<<<<< HEAD
-                    </ul>
-=======
                     </ul>  
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <input type="hidden" name="total" value="{{ $cartTotal }}">
                        @else
 
                        <ul class="generic-list-item generic-list-item-flash fs-15">
-<<<<<<< HEAD
-
-=======
                        
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li class="d-flex align-items-center justify-content-between font-weight-bold">
                             <span class="text-black">Total:</span>
                             <span>₹{{ $cartTotal }}</span>
@@ -297,19 +252,12 @@
                     </ul>
 
                        @endif
-<<<<<<< HEAD
-
-
-                        <div class="btn-box border-top border-top-gray pt-3">
-                            <p class="fs-14 lh-22 mb-2">Gyanpeeth Global is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
-=======
                        
                         
                         <div class="btn-box border-top border-top-gray pt-3">
                             <p class="fs-14 lh-22 mb-2">Aduca is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <p class="fs-14 lh-22 mb-3">By completing your purchase you agree to these <a href="#" class="text-color hover-underline">Terms of Service.</a></p>
-                            <button type="button" class="btn theme-btn w-100" onclick="proceedPayment()">Proceed<i class="la la-arrow-right icon ml-1"></i></button>
+                            <button type="submit" class="btn theme-btn w-100">Proceed<i class="la la-arrow-right icon ml-1"></i></button>
                         </div>
                     </div><!-- end card-body -->
                 </div><!-- end card -->
@@ -322,6 +270,69 @@
 </section>
 
 <!-- /////////////////////////----------Start JavaScript  ------- ///////////////////////////// -->
+<script type="text/javascript">
+    // Create a Stripe client.
+var stripe = Stripe('pk_test_51PNs8wRwbK4T6QHq03PaQuoeV1lGIjfZiZVpHp2HGKELALuJlqDSTIXhe7f0EXVFRQc8sb3GvIPHQByte3BqNVRb00Avbk719f');
+// Create an instance of Elements.
+var elements = stripe.elements();
+// Custom styling can be passed to options when creating an Element.
+// (Note that this demo uses a wider set of styles than the guide below.)
+var style = {
+  base: {
+    color: '#32325d',
+    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+    fontSmoothing: 'antialiased',
+    fontSize: '16px',
+    '::placeholder': {
+      color: '#aab7c4'
+    }
+  },
+  invalid: {
+    color: '#fa755a',
+    iconColor: '#fa755a'
+  }
+};
+// Create an instance of the card Element.
+var card = elements.create('card', {style: style});
+// Add an instance of the card Element into the `card-element` <div>.
+card.mount('#card-element');
+// Handle real-time validation errors from the card Element.
+card.on('change', function(event) {
+  var displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});
+// Handle form submission.
+var form = document.getElementById('payment-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  stripe.createToken(card).then(function(result) {
+    if (result.error) {
+      // Inform the user if there was an error.
+      var errorElement = document.getElementById('card-errors');
+      errorElement.textContent = result.error.message;
+    } else {
+      // Send the token to your server.
+      stripeTokenHandler(result.token);
+    }
+  });
+});
+// Submit the form with the token ID.
+function stripeTokenHandler(token) {
+  // Insert the token ID into the form so it gets submitted to the server
+  var form = document.getElementById('payment-form');
+  var hiddenInput = document.createElement('input');
+  hiddenInput.setAttribute('type', 'hidden');
+  hiddenInput.setAttribute('name', 'stripeToken');
+  hiddenInput.setAttribute('value', token.id);
+  form.appendChild(hiddenInput);
+  // Submit the form
+  form.submit();
+}
+</script>
 
 
 @include('frontend.body.footer')
@@ -352,54 +363,6 @@
 <script src="{{ asset('frontend/js/plyr.js') }}"></script>
 <script src="{{ asset('frontend/js/jquery.lazy.min.js') }}"></script>
 <script src="{{ asset('frontend/js/main.js') }}"></script>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-<script>
-    var options = {
-        "key": "<?php echo $data['razorpay_key'] ?>",
-        "amount": "<?php echo $data['amount'] ?>",
-        "currency": "INR",
-        "name": "<?php echo $data['name'] ?>",
-        // "image": "YOUR COMPANY IMAGE",
-        "order_id": "<?php echo $data['order_id'] ?>",
-        "handler": function(response) {
-            console.log(response.razorpay_payment_id);
-            console.log(response.razorpay_order_id);
-            console.log(response.razorpay_signature);
-        },
-        "prefill": {
-            "name": "{{ $data['name'] }}",
-            "email": "{{ $data['email'] }}"
-        },
-        // "theme": {
-        //     "color": "#F37254"
-        // }
-    };
-    options.handler = function(response) {
-        document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
-        document.getElementById('razorpay_signature').value = response.razorpay_signature;
-        document.razorpayform.submit();
-    };
-    // options.theme.image_padding = false;
-    options.modal = {
-        ondismiss: function() {
-            window.location.href = "/checkout"
-        },
-        escape: true,
-        backdropclose: false
-    };
-    var rzp1 = new Razorpay(options);
-    rzp1.on('payment.failed', function(response) {
-        console.log(response.error)
-    });
-
-    console.log('test', rzp1)
-    // rzp1.open();
-
-    function proceedPayment() {
-        rzp1.open();
-    }
-</script>
 
 <script>
     var player = new Plyr('#player');
@@ -431,15 +394,9 @@ break;
 
 case 'error':
 toastr.error(" {{ Session::get('message') }} ");
-<<<<<<< HEAD
-break;
-}
-@endif
-=======
 break; 
 }
 @endif 
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -447,8 +404,4 @@ break;
 @include('frontend.body.script')
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

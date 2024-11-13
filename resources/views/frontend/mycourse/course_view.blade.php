@@ -42,7 +42,11 @@
 </div>
 </div><!-- end logo-box -->
 <div class="course-dashboard-header-title pl-4">
+<<<<<<< HEAD
 <a href="{{ route('my.course') }}" class="text-white fs-15">{{ $course->course->course_name }}</a>
+=======
+<a href="course-details.html" class="text-white fs-15">{{ $course->course->course_name }}</a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </div><!-- end course-dashboard-header-title -->
 <div class="menu-wrapper ml-auto">
 <div class="theme-picker d-flex align-items-center mr-3">
@@ -110,6 +114,7 @@ START COURSE-DASHBOARD
 
     <div class="lecture-viewer-container">
         <div class="lecture-video-item">
+<<<<<<< HEAD
 <iframe width="100%" height="500" id="videoContainer" src=""
     title="The Best Way to Learn With Videos and Online Classes I Video Notebook" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -119,6 +124,17 @@ START COURSE-DASHBOARD
 </div>
 
         </div>
+=======
+<iframe width="100%" height="500" id="videoContainer" src="" 
+    title="The Best Way to Learn With Videos and Online Classes I Video Notebook" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+<div id="textLesson" class="fs-24 font-weight-semi-bold pb-2 text-center mt-4">
+<h3></h3>
+</div> 
+
+        </div> 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div><!-- end lecture-viewer-container -->
 
 
@@ -152,11 +168,19 @@ START COURSE-DASHBOARD
         Question & Ans
     </a>
 </li>
+<<<<<<< HEAD
 {{-- <li class="nav-item">
     <a class="nav-link" id="announcements-tab" data-toggle="tab" href="#announcements" role="tab" aria-controls="announcements" aria-selected="false">
         Announcements
     </a>
 </li> --}}
+=======
+<li class="nav-item">
+    <a class="nav-link" id="announcements-tab" data-toggle="tab" href="#announcements" role="tab" aria-controls="announcements" aria-selected="false">
+        Announcements
+    </a>
+</li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </ul>
 </div>
 <div class="lecture-video-detail-body">
@@ -183,7 +207,11 @@ START COURSE-DASHBOARD
     <div class="mobile-course-menu pt-4">
         <div class="accordion generic-accordion generic--accordion" id="mobileCourseAccordionCourseExample">
 
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
 
             <div class="card">
@@ -273,9 +301,15 @@ START COURSE-DASHBOARD
                     </div><!-- end card-body -->
                 </div><!-- end collapse -->
             </div><!-- end card -->
+<<<<<<< HEAD
 
 
 
+=======
+   
+   
+          
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         </div><!-- end accordion-->
     </div><!-- end mobile-course-menu -->
 </div><!-- end tab-pane -->
@@ -297,6 +331,10 @@ START COURSE-DASHBOARD
                 <div class="lecture-overview-stats-item">
                     <ul class="generic-list-item">
                         <li><span>Skill level:</span>{{ $course->course->label }}</li>
+<<<<<<< HEAD
+=======
+                        <li><span>Students:</span>83950</li>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <li><span>Languages:</span>English</li>
                         <li><span>Captions:</span>Yes</li>
                     </ul>
@@ -317,13 +355,22 @@ START COURSE-DASHBOARD
                     <h3 class="fs-16 font-weight-semi-bold pb-2">Certificates</h3>
                 </div><!-- end lecture-overview-stats-item -->
                 <div class="lecture-overview-stats-item lecture-overview-stats-wide-item">
+<<<<<<< HEAD
                     <p class="pb-3">Get Gyanpeeth Global certificate by completing entire course</p>
                     <a href="#" class="btn theme-btn theme-btn-transparent">Gyanpeeth Global Certificate</a>
+=======
+                    <p class="pb-3">Get Aduca certificate by completing entire course</p>
+                    <a href="#" class="btn theme-btn theme-btn-transparent">Aduca Certificate</a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end lecture-overview-stats-item -->
             </div><!-- end lecture-overview-stats-wrap -->
         </div><!-- end lecture-overview-item -->
         <div class="section-block"></div>
+<<<<<<< HEAD
         {{-- <div class="lecture-overview-item">
+=======
+        <div class="lecture-overview-item">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <div class="lecture-overview-stats-wrap d-flex">
                 <div class="lecture-overview-stats-item">
                     <h3 class="fs-16 font-weight-semi-bold pb-2">Features</h3>
@@ -332,7 +379,11 @@ START COURSE-DASHBOARD
                     <p>Available on <a href="#" class="text-color hover-underline">IOS</a> and <a href="#" class="text-color hover-underline">Android</a></p>
                 </div><!-- end lecture-overview-stats-item -->
             </div><!-- end lecture-overview-stats-wrap -->
+<<<<<<< HEAD
         </div><!-- end lecture-overview-item --> --}}
+=======
+        </div><!-- end lecture-overview-item -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="section-block"></div>
         <div class="lecture-overview-item">
             <div class="lecture-overview-stats-wrap d-flex">
@@ -342,13 +393,22 @@ START COURSE-DASHBOARD
                 <div class="lecture-overview-stats-item lecture-overview-stats-wide-item lecture-description">
                     <h3 class="fs-16 font-weight-semi-bold pb-2">From the Author of the Best Selling After Effects CC 2020 Complete Course</h3>
                     <p>{!! $course->course->description !!}</p>
+<<<<<<< HEAD
 
 
+=======
+                    
+                 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end lecture-overview-stats-item -->
             </div><!-- end lecture-overview-stats-wrap -->
         </div><!-- end lecture-overview-item -->
         <div class="section-block"></div>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div><!-- end lecture-overview-wrap -->
 </div><!-- end tab-pane -->
 
@@ -396,12 +456,21 @@ START COURSE-DASHBOARD
 
 
         <div class="question-overview-result-wrap">
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+          
+         
+         
+         
+         
+         
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <div class="lecture-overview-item">
                 <div class="question-overview-result-header d-flex align-items-center justify-content-between">
                     <h3 class="fs-17 font-weight-semi-bold">{{ count($allquestion) }} questions in this course</h3>
@@ -409,11 +478,19 @@ START COURSE-DASHBOARD
                 </div>
             </div><!-- end lecture-overview-item -->
             <div class="section-block"></div>
+<<<<<<< HEAD
 
 
             <div class="lecture-overview-item mt-0">
                 <div class="question-list-item">
 
+=======
+            
+            
+            <div class="lecture-overview-item mt-0">
+                <div class="question-list-item">
+                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
                     @php
                         $id = Auth::user()->id;
@@ -421,7 +498,11 @@ START COURSE-DASHBOARD
                     @endphp
 
                     @foreach ($question as $que)
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="media media-card border-bottom border-bottom-gray py-4 px-3">
                         <div class="media-img rounded-full flex-shrink-0 avatar-sm">
                             <img class="rounded-full" src="{{ (!empty($que->user->photo)) ? url('upload/user_images/'.$que->user->photo) : url('upload/no_image.jpg') }}" alt="User image">
@@ -436,10 +517,17 @@ START COURSE-DASHBOARD
                                         </p>
                                     </a>
                                 </div><!-- end question-meta-content -->
+<<<<<<< HEAD
 
                             </div>
                             <p class="meta-tags pt-1 fs-13">
 
+=======
+                              
+                            </div>
+                            <p class="meta-tags pt-1 fs-13">
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <span>{{ Carbon\Carbon::parse($que->created_at)->diffForHumans() }}</span>
                             </p>
                         </div><!-- end media-body -->
@@ -452,7 +540,11 @@ START COURSE-DASHBOARD
 
 
                     @foreach ($replay as $rep)
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     <div class="media media-card border-bottom border-bottom-gray py-4 px-3" style="background: #e6e6e6">
                         <div class="media-img rounded-full flex-shrink-0 avatar-sm">
                             <img class="rounded-full" src="{{ (!empty($rep->instructor->photo)) ? url('upload/instructor_images/'.$rep->instructor->photo) : url('upload/no_image.jpg') }}" alt="User image">
@@ -467,20 +559,35 @@ START COURSE-DASHBOARD
                                         </p>
                                     </a>
                                 </div><!-- end question-meta-content -->
+<<<<<<< HEAD
 
                             </div>
                             <p class="meta-tags pt-1 fs-13">
 
+=======
+                              
+                            </div>
+                            <p class="meta-tags pt-1 fs-13">
+                                
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                 <span>{{ Carbon\Carbon::parse($rep->created_at)->diffForHumans() }}</span>
                             </p>
                         </div><!-- end media-body -->
                     </div><!-- end media -->
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                     @endforeach
 
                     @endforeach
 
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div>
                 <div class="question-btn-box pt-35px text-center">
                     <button class="btn theme-btn theme-btn-transparent w-100" type="button">See More</button>
@@ -489,12 +596,20 @@ START COURSE-DASHBOARD
         </div>
     </div>
 </div><!-- end tab-pane -->
+<<<<<<< HEAD
 {{-- <div class="tab-pane fade" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
+=======
+<div class="tab-pane fade" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="lecture-overview-wrap lecture-announcement-wrap">
         <div class="lecture-overview-item">
             <div class="media media-card align-items-center">
                 <a href="teacher-detail.html" class="media-img d-block rounded-full avatar-md">
+<<<<<<< HEAD
                     <img src="" alt="Instructor avatar" class="rounded-full">
+=======
+                    <img src="images/small-avatar-1.jpg" alt="Instructor avatar" class="rounded-full">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </a>
                 <div class="media-body">
                     <h5 class="pb-1"><a href="teacher-detail.html">Alex Smith</a></h5>
@@ -563,7 +678,11 @@ START COURSE-DASHBOARD
             </div><!-- end lecture-announcement-comment-wrap -->
         </div><!-- end lecture-overview-item -->
     </div>
+<<<<<<< HEAD
 </div><!-- end tab-pane --> --}}
+=======
+</div><!-- end tab-pane -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </div><!-- end tab-content -->
 </div><!-- end lecture-video-detail-body -->
 </div><!-- end lecture-video-detail -->
@@ -572,21 +691,32 @@ START COURSE-DASHBOARD
 <div class="row align-items-center">
 <div class="col-lg-6">
     <div class="cta-content-wrap">
+<<<<<<< HEAD
         <h3 class="fs-18 font-weight-semi-bold">Top companies choose <a href="#" class="text-color hover-underline">Gyanpeeth Global</a> to build in-demand career skills.</h3>
+=======
+        <h3 class="fs-18 font-weight-semi-bold">Top companies choose <a href="for-business.html" class="text-color hover-underline">Aduca for Business</a> to build in-demand career skills.</h3>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div>
 </div><!-- end col-lg-6 -->
 <div class="col-lg-6">
     <div class="client-logo-wrap text-right">
+<<<<<<< HEAD
         <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/facebook.png')}}" alt="brand image"></a>
         <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/amazon.png')}}" alt="brand image"></a>
         <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/google.png')}}" alt="brand image"></a>
         <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/microsoft.png')}}" alt="brand image"></a>
         <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/apple.png')}}"  alt="brand image"></a>
+=======
+        <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/sponsor-img.png') }}" alt="brand image"></a>
+        <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/sponsor-img2.png') }}" alt="brand image"></a>
+        <a href="#" class="client-logo-item client--logo-item-2 pr-3"><img src="{{ asset('frontend/images/sponsor-img3.png') }}" alt="brand image"></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div><!-- end client-logo-wrap -->
 </div><!-- end col-lg-6 -->
 </div><!-- end row -->
 </div><!-- end container-fluid -->
 </div><!-- end cta-area -->
+<<<<<<< HEAD
 @php
     $setting = App\Models\SiteSetting::find(1);
 @endphp
@@ -647,6 +777,12 @@ START COURSE-DASHBOARD
     </div><!-- end row -->
 {{--<div class="row">
  <div class="col-lg-3 responsive-column-half">
+=======
+<div class="footer-area pt-50px">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 responsive-column-half">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="footer-item">
         <a href="index.html">
             <img src="{{ asset('frontend/images/logo.png' )}}" alt="footer logo" class="footer__logo">
@@ -688,20 +824,32 @@ START COURSE-DASHBOARD
     <div class="footer-item">
         <h3 class="fs-20 font-weight-semi-bold pb-3">Download App</h3>
         <div class="mobile-app">
+<<<<<<< HEAD
             <p class="pb-3 lh-24">Our mobile apps are coming soon</p>
+=======
+            <p class="pb-3 lh-24">Download our mobile app and learn on the go.</p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <a href="#" class="d-block mb-2 hover-s"><img src="images/appstore.png" alt="App store" class="img-fluid"></a>
             <a href="#" class="d-block hover-s"><img src="images/googleplay.png" alt="Google play store" class="img-fluid"></a>
         </div>
     </div><!-- end footer-item -->
 </div><!-- end col-lg-3 -->
+<<<<<<< HEAD
 </div><!-- end row --> --}}
+=======
+</div><!-- end row -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </div><!-- end container-fluid -->
 <div class="section-block"></div>
 <div class="copyright-content py-4">
 <div class="container-fluid">
 <div class="row align-items-center">
     <div class="col-lg-6">
+<<<<<<< HEAD
         <p class="copy-desc">&copy; 2024 Gyanpeeth Global. All Rights Reserved. by <a href="https://gyanpeethglobal.com/">Gyanpeeth Global</a></p>
+=======
+        <p class="copy-desc">&copy; 2021 Aduca. All Rights Reserved. by <a href="https://techydevs.com/">TechyDevs</a></p>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     </div><!-- end col-lg-6 -->
     <div class="col-lg-6">
         <div class="d-flex flex-wrap align-items-center justify-content-end">
@@ -754,7 +902,11 @@ START COURSE-DASHBOARD
     @php
         $lectures = App\Models\CourseLecture::where('section_id', $sec->id)->get();
     @endphp
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <div class="card">
     <div class="card-header" id="headingOne{{ $sec->id }}">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne{{ $sec->id }}" aria-expanded="true" aria-controls="collapseOne">
@@ -771,7 +923,11 @@ START COURSE-DASHBOARD
             <ul class="curriculum-sidebar-list">
 
                 @foreach ($lectures as $lect)
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 <li class="course-item-link active">
                     <div class="course-item-content-wrap">
                         <div class="custom-control custom-checkbox">
@@ -783,10 +939,17 @@ START COURSE-DASHBOARD
                         </div><!-- end course-item-content -->
                     </div><!-- end course-item-content-wrap -->
                 </li>
+<<<<<<< HEAD
 
                 @endforeach
 
 
+=======
+                
+                @endforeach
+
+               
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             </ul>
         </div><!-- end card-body -->
     </div><!-- end collapse -->
@@ -860,7 +1023,11 @@ START COURSE-DASHBOARD
                 <div class="copy-to-clipboard">
                     <span class="success-message">Copied!</span>
                     <div class="input-group">
+<<<<<<< HEAD
                         <input type="text" class="form-control form--control copy-input pl-3" value="https://www.gyanpeethglobal.com/share/101WxMB0oac1hVQQ==/">
+=======
+                        <input type="text" class="form-control form--control copy-input pl-3" value="https://www.aduca.com/share/101WxMB0oac1hVQQ==/">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <div class="input-group-append">
                             <button class="btn theme-btn theme-btn-sm copy-btn shadow-none"><i class="la la-copy mr-1"></i> Copy</button>
                         </div>
@@ -885,7 +1052,11 @@ START COURSE-DASHBOARD
             <div class="modal-header border-bottom-gray">
                 <div class="pr-2">
                     <h5 class="modal-title fs-19 font-weight-semi-bold lh-24" id="reportModalTitle">Report Abuse</h5>
+<<<<<<< HEAD
                     <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Gyanpeeth Global staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+=======
+                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Aduca staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                         <a href="contact.html" class="text-color hover-underline">Support team here</a>.</p>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -902,7 +1073,11 @@ START COURSE-DASHBOARD
                                     <option value>-- Select One --</option>
                                     <option value="1">Inappropriate Course Content</option>
                                     <option value="2">Inappropriate Behavior</option>
+<<<<<<< HEAD
                                     <option value="3">Gyanpeeth Global Policy Violation</option>
+=======
+                                    <option value="3">Aduca Policy Violation</option>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                                     <option value="4">Spammy Content</option>
                                     <option value="5">Other</option>
                                 </select>
@@ -1047,4 +1222,8 @@ START COURSE-DASHBOARD
 
 @include('frontend.mycourse.body.footer')
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

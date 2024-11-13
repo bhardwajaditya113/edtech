@@ -16,7 +16,11 @@
             </div><!-- end col-lg-9 -->
             <div class="col-lg-3">
                 <div class="category-btn-box text-right">
+<<<<<<< HEAD
                     <a href="#" class="btn theme-btn">All Categories <i class="la la-arrow-right icon ml-1"></i></a>
+=======
+                    <a href="categories.html" class="btn theme-btn">All Categories <i class="la la-arrow-right icon ml-1"></i></a>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                 </div><!-- end category-btn-box-->
             </div><!-- end col-lg-3 -->
         </div><!-- end row -->
@@ -43,4 +47,8 @@
             </div><!-- end row -->
         </div><!-- end category-wrapper -->
     </div><!-- end container -->
+<<<<<<< HEAD
 </section><!-- end category-area -->
+=======
+</section><!-- end category-area -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

@@ -6,7 +6,11 @@
                     <div class="card-body">
                         <h3 class="fs-24 font-weight-semi-bold pb-2">Receive Free Courses</h3>
                         <div class="divider"><span></span></div>
+<<<<<<< HEAD
                         <form action="/register">
+=======
+                        <form method="post">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
                             <div class="input-box">
                                 <label class="label-text">Name</label>
                                 <div class="form-group">
@@ -57,4 +61,8 @@
             </div><!-- end col-lg-6 -->
         </div><!-- end row -->
     </div><!-- end container -->
+<<<<<<< HEAD
 </section><!-- end register-area -->
+=======
+</section><!-- end register-area -->
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<<<<<<< HEAD
     <meta name="author" content="AdityaBhardwaj">
+=======
+    <meta name="author" content="TechyDevs">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -15,9 +19,15 @@
     @php
         $setting = App\Models\SiteSetting::find(1);
     @endphp
+<<<<<<< HEAD
 
     <!-- Favicon -->
     <link rel="icon" sizes="16x16" href="{{ asset('upload/logo/logo.jpeg') }}" style="width: 50px; height: 50px; border-radius 50px;">
+=======
+        
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="{{ asset('backend/assets/images/logo.jpg') }}" style="width: 50px; height: 50px; border-radius 50px;">                     
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -116,9 +126,15 @@ break;
 
 case 'error':
 toastr.error(" {{ Session::get('message') }} ");
+<<<<<<< HEAD
 break;
 }
 @endif
+=======
+break; 
+}
+@endif 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -126,4 +142,8 @@ break;
 @include('frontend.body.script')
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f

@@ -6,7 +6,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
+<<<<<<< HEAD
 	<link rel="icon" href="{{ asset('upload/logo/logo.jpeg') }}" type="image/png" />
+=======
+	<link rel="icon" href="{{ asset('backend/assets/images/favicon-32x32.png') }}" type="image/png" />
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 	<!--plugins-->
 	<link href="{{ asset('backend/assets/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
 	<link href="{{ asset('backend/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
@@ -20,7 +24,11 @@
 	<link href="{{ asset('backend/https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap') }}" rel="stylesheet">
 	<link href="{{ asset('backend/assets/css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('backend/assets/css/icons.css') }}" rel="stylesheet">
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
 	<title>Instructor Login</title>
@@ -37,25 +45,41 @@
 
                         <div class="card shadow-none bg-transparent shadow-none rounded-0 mb-0">
 							<div class="card-body">
+<<<<<<< HEAD
                                  <img src="{{ asset('upload/logo/logo.jpeg') }}" class="img-fluid auth-img-cover-login" width="750" alt="" style="transform: rotate(360deg);"/>
 							</div>
 						</div>
 
+=======
+                                 <img src="{{ asset('backend/assets/images/login-images/login-cover.svg') }}" class="img-fluid auth-img-cover-login" width="650" alt=""/>
+							</div>
+						</div>
+						
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 					</div>
 
 					<div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
 						<div class="card rounded-0 m-3 shadow-none bg-transparent mb-0">
 							<div class="card-body p-sm-5">
 								<div class="">
+<<<<<<< HEAD
 								<div class="mb-3 text-center">
 										<img src="{{ asset('upload/logo/logo.jpeg') }}" alt="logo" style="width: 50px; height: 50px; border-radius:50px;">
+=======
+									<div class="mb-3 text-center">
+										<img src="{{ asset('backend/assets/images/logo-icon.png') }}" width="60" alt="">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 									</div>
 									<div class="text-center mb-4">
 										<h5 class="">Instructor Login</h5>
 										<p class="mb-0">Please log in to your account</p>
 									</div>
 									<div class="form-body">
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <form class="row g-3" method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -75,28 +99,49 @@
             @enderror
             </div>
         </div>
+<<<<<<< HEAD
         <!-- <div class="col-md-6">
+=======
+        <div class="col-md-6">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
                 <label class="form-check-label" for="flexSwitchCheckChecked">Remember Me</label>
             </div>
+<<<<<<< HEAD
         </div> -->
         <!-- <div class="col-md-6 text-end">	<a href="authentication-forgot-password.html">Forgot Password ?</a>
         </div> -->
+=======
+        </div>
+        <div class="col-md-6 text-end">	<a href="authentication-forgot-password.html">Forgot Password ?</a>
+        </div>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
         <div class="col-12">
             <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
         </div>
+<<<<<<< HEAD
         <!-- <div class="col-12">
+=======
+        <div class="col-12">
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
             <div class="text-center ">
                 <p class="mb-0">Don't have an account yet? <a href="authentication-signup.html">Sign up here</a>
                 </p>
             </div>
+<<<<<<< HEAD
         </div> -->
     </form>
 									</div>
 									<!-- <div class="login-separater text-center mb-5"> <span>OR SIGN IN WITH</span>
+=======
+        </div>
+    </form>
+									</div>
+									<div class="login-separater text-center mb-5"> <span>OR SIGN IN WITH</span>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 										<hr>
 									</div>
 									<div class="list-inline contacts-social text-center">
@@ -104,7 +149,11 @@
 										<a href="javascript:;" class="list-inline-item bg-twitter text-white border-0 rounded-3"><i class="bx bxl-twitter"></i></a>
 										<a href="javascript:;" class="list-inline-item bg-google text-white border-0 rounded-3"><i class="bx bxl-google"></i></a>
 										<a href="javascript:;" class="list-inline-item bg-linkedin text-white border-0 rounded-3"><i class="bx bxl-linkedin"></i></a>
+<<<<<<< HEAD
 									</div> -->
+=======
+									</div>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 
 								</div>
 							</div>
@@ -163,11 +212,21 @@
 
     case 'error':
     toastr.error(" {{ Session::get('message') }} ");
+<<<<<<< HEAD
     break;
  }
  @endif
+=======
+    break; 
+ }
+ @endif 
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
 </script>
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fdea064c21b524e04fa06c265b662633c888f77f
